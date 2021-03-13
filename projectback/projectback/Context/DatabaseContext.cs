@@ -38,7 +38,7 @@ namespace projectback.Context
         public DbSet<EnderecoDTO> Enderecos { get; set; }
 
 
-        public async Task<int> SaveChangesKodigos(long usuarioId)
+        public async Task<int> SaveChangesMR(long usuarioId)
         {
             var auditEntries = OnBeforeSaveChanges(usuarioId);
             var result = await base.SaveChangesAsync();

@@ -5,8 +5,8 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Dapper;
-using LibraryKodigos;
-using LibraryKodigos.KUtils;
+using LibraryMR;
+using LibraryMR.KUtils;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

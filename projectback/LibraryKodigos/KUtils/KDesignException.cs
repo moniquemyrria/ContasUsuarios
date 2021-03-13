@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LibraryKodigos.KUtils
+namespace LibraryMR.KUtils
 {
     public class KDesignException
     {   

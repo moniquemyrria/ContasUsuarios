@@ -6,4 +6,3 @@ C:\wamp64\www\ContasUsuarios\projectback\LibraryKodigos\obj\Debug\netcoreapp3.1\
 C:\wamp64\www\ContasUsuarios\projectback\LibraryKodigos\obj\Debug\netcoreapp3.1\LibraryMR.csproj.CoreCompileInputs.cache
 C:\wamp64\www\ContasUsuarios\projectback\LibraryKodigos\obj\Debug\netcoreapp3.1\LibraryMR.dll
 C:\wamp64\www\ContasUsuarios\projectback\LibraryKodigos\obj\Debug\netcoreapp3.1\LibraryMR.pdb
-C:\wamp64\www\ContasUsuarios\projectback\LibraryKodigos\obj\Debug\netcoreapp3.1\LibraryMR.csprojAssemblyReference.cache

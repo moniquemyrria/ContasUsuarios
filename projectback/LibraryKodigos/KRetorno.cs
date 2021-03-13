@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LibraryKodigos
+namespace LibraryMR
 {
     public class KRetorno<T> : KRetorno
         where T : class
