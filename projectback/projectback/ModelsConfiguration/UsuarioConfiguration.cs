@@ -17,11 +17,15 @@ namespace projectback.ModelsConfiguration
             {
                 entity.ToTable("Usuarios").HasKey(t => t.id);
 
-                entity.Property(t => t.nome).HasMaxLength(100);
+                entity.Property(t => t.nome).HasMaxLength(100).IsRequired();
                 
-                entity.Property(t => t.email).HasMaxLength(50);
+                entity.Property(t => t.email).HasMaxLength(50).IsRequired();
                 
-                entity.Property(t => t.senha).HasMaxLength(50);
+                entity.Property(t => t.senha).HasMaxLength(50).IsRequired();
+
+                entity.Property(t => t.dataNascimento);
+
+                entity.Property(t => t.cpf).HasMaxLength(13);
 
                 entity.Property(t => t.deletado).HasMaxLength(1);
 

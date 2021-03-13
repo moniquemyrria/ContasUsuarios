@@ -15,10 +15,16 @@ namespace projectback.ModelsData
         public string email { get; set; }
         
         public string senha { get; set; }
-        
+
+        public DateTime ? dataNascimento { get; set; }
+
+        public string cpf { get; set; }
+
         public DateTime dataCadastro { get; set; }
 
         public string deletado { get; set; }
+
+        public List<EnderecoDTO> Endereco { get; set; }
 
     }
 }

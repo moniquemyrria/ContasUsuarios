@@ -96,5 +96,24 @@ export class UsuarioFormController implements IUsuarioFormController {
 
   }
 
+  cosultarEndereco(cep: string): void {
+
+    this._view.loading(true);
+
+    axios
+      .get("ConsultaCep/" + cep)
+      .then((response: any) => {
+        this._view.loading(false);
+        if (response.data) {
+          this._view.carregaEndereco(response.data)
+        }
+      })
+      .catch((e: any) => {
+        this._view.loading(false);
+        this._view.showMsg(e, 0);
+      });
+
+  }
+
 
 }

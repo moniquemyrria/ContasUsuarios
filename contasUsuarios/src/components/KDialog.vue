@@ -1,7 +1,7 @@
 <template>
   <v-dialog v-model="dialog" :persistent="persistent" :width="width">
     <v-card>
-      <v-card-title style="background: #313C42; color: white" primary-title persistent>{{title}}</v-card-title>
+      <v-card-title style="background: #093768; color: white" primary-title persistent>{{title}}</v-card-title>
 
       <v-card-text style="margin-top: 30px">
         <slot name="text">
@@ -15,7 +15,7 @@
       <v-card-actions>
         <v-spacer></v-spacer>
         <slot name="buttoes">
-          <v-btn width="100" text color="#F89F43" @click="fecharDialog">OK</v-btn>
+          <v-btn width="100" text color="primary" @click="fecharDialog">OK</v-btn>
         </slot>
       </v-card-actions>
     </v-card>

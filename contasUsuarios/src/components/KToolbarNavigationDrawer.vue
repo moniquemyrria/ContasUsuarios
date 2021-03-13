@@ -10,10 +10,10 @@
       <v-app-bar-nav-icon id="card-toolbar-icons" @click="drawer = !drawer" />
       <v-toolbar-title>
         <img
-          style="width: 129px; margin-top: 16px; margin-left: -20px"
+          style="width: 80px; margin-top: 14px; margin-left: -20px"
           class="img-fluid"
           width="25%"
-          src="../assets/logo_inventus.svg"
+          src="../assets/undraw_personal_information_962o.svg"
         />
       </v-toolbar-title>
 
@@ -29,7 +29,7 @@
             id="card-toolbar-icons"
             @click="expand = !expand"
           >
-            <v-badge overlap color="#F79733" right>
+            <v-badge overlap color="#093768" right>
               <template v-slot:badge>
                 <span>:)</span>
               </template>
@@ -40,14 +40,15 @@
         <v-spacer></v-spacer>
         <v-card class="mx-auto" max-width="344">
           <v-img
-            src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+            src="../assets/undraw_design_components_9vy6.svg"
             height="200px"
           ></v-img>
 
           <v-card-title> Monique Rocha </v-card-title>
 
-          <v-card-subtitle> Esta aplicação foi desenvolvida por </v-card-subtitle>
-
+          <v-card-subtitle>
+            Esta aplicação foi desenvolvida por
+          </v-card-subtitle>
         </v-card>
       </v-menu>
       <label class="colorPrimaryText--text">
@@ -60,7 +61,7 @@
       id="navigation-drawer"
       v-model="drawer"
       app
-      color="primary"
+      color="#093768"
     >
       <v-list dense>
         <v-list-item link @click="drawer = !drawer">
@@ -81,7 +82,7 @@
               </router-link>
             </v-list-item-title>
           </v-list-item>
-          <v-list-group v-else no-action color="#F79733">
+          <v-list-group v-else no-action color="#093768">
             <v-list-item link style="margin-left: -15px" slot="activator">
               <v-list-item-title>
                 <span class="white--text">{{ itemMenu.title }}</span>
@@ -96,7 +97,17 @@
               <v-list-item-content style="margin-left: -40px">
                 <v-list-item-title>
                   <router-link :to="itemSubMenu.path">
-                    <span class="white--text">{{ itemSubMenu.title }}</span>
+                    <v-row>
+                      <v-list-item-icon>
+                        <v-icon style="margin-left: 10px" color="white">mdi-account</v-icon>
+                      </v-list-item-icon>
+                      <v-list-item-content>
+                        <v-list-item-title class="white--text">{{
+                          itemSubMenu.title
+                        }}</v-list-item-title>
+                      </v-list-item-content>
+                    </v-row>
+                    <!-- <span class="white--text">{{ itemSubMenu.title }}</span> -->
                   </router-link>
                 </v-list-item-title>
               </v-list-item-content>
@@ -125,9 +136,7 @@ export default Vue.extend({
     /////
     drawer: null,
   }),
-  methods: {
-    
-  },
+  methods: {},
 });
 </script>
 
@@ -154,7 +163,7 @@ export default Vue.extend({
   text-align: center;
   font: Black 19px/21px Geometr415 Blk BT;
   letter-spacing: 2.28px;
-  color: #f79733;
+  color: #aeddff;
   text-transform: uppercase;
   opacity: 1;
 }

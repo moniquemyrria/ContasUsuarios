@@ -26,7 +26,7 @@
         "dependencies": {
           "AutoMapper": "10.0.0",
           "Dapper": "2.0.35",
-          "LibraryKodigos": "1.0.0",
+          "LibraryMR": "1.0.0",
           "Microsoft.AspNetCore.Hosting.WindowsServices": "3.1.1",
           "Microsoft.AspNetCore.StaticFiles": "2.2.0",
           "Microsoft.EntityFrameworkCore.Design": "3.1.12",
@@ -3042,7 +3042,7 @@
           "ref/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "LibraryKodigos/1.0.0": {
+      "LibraryMR/1.0.0": {
         "dependencies": {
           "Aspose.Cells": "21.2.0",
           "EPPlus": "5.0.3",
@@ -3050,10 +3050,10 @@
           "System.DirectoryServices": "4.7.0"
         },
         "runtime": {
-          "LibraryKodigos.dll": {}
+          "LibraryMR.dll": {}
         },
         "compile": {
-          "LibraryKodigos.dll": {}
+          "LibraryMR.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -6123,7 +6123,7 @@
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
     },
-    "LibraryKodigos/1.0.0": {
+    "LibraryMR/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

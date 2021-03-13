@@ -1,6 +1,6 @@
 <template>
   <v-dialog v-model="dialog" persistent width="350">
-    <v-card color="#F79733" style="text-align:center;" dark>
+    <v-card color="#1867C0" style="text-align:center;" dark>
       <v-card-text>
         <br />
         {{title}}

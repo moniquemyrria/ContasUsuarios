@@ -4949,11 +4949,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\wamp64\\www\\ContasUsuarios_ModeloTeste\\projectback\\LibraryKodigos\\LibraryKodigos.csproj",
-      "projectName": "LibraryKodigos",
-      "projectPath": "C:\\wamp64\\www\\ContasUsuarios_ModeloTeste\\projectback\\LibraryKodigos\\LibraryKodigos.csproj",
+      "projectUniqueName": "C:\\wamp64\\www\\ContasUsuarios\\projectback\\LibraryKodigos\\LibraryMR.csproj",
+      "projectName": "LibraryMR",
+      "projectPath": "C:\\wamp64\\www\\ContasUsuarios\\projectback\\LibraryKodigos\\LibraryMR.csproj",
       "packagesPath": "C:\\Users\\Monique Rocha\\.nuget\\packages\\",
-      "outputPath": "C:\\wamp64\\www\\ContasUsuarios_ModeloTeste\\projectback\\LibraryKodigos\\obj\\",
+      "outputPath": "C:\\wamp64\\www\\ContasUsuarios\\projectback\\LibraryKodigos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Monique Rocha\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -15,7 +15,7 @@ const routes = [
         component: () => import("../views/Cadastro/UsuarioLista.vue"),
       },
       {
-        path: "/usuario/:id",
+        path: "/usuario/:id/:tipo",
         name: "UsuarioEdit",
         component: () => import("../views/Cadastro/UsuarioForm.vue"),
       },

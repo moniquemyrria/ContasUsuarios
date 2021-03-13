@@ -9,8 +9,8 @@
     ></k-dialog>
     <k-dialog
       :dialog="dialogDelete"
-      title="Remover Usuario?"
-      text="O Usuario selecionado será removido. Deseja Continuar?"
+      title="Remover Usuário?"
+      text="O Usuário selecionado será removido. Deseja Continuar?"
     >
       <template v-slot:buttoes>
         <v-btn
@@ -33,25 +33,12 @@
     </k-dialog>
     <v-container>
       <v-row>
-        <v-breadcrumbs style="margin-left: -10px" :items="caminho">
-          <template v-slot:divider>
-            <!-- <v-icon>mdi-home</v-icon> -->
-          </template>
-          <template v-slot:item="{ item }">
-            <router-link :to="item.href">
-              {{ item.text }}
-            </router-link>
-          </template>
-        </v-breadcrumbs>
-      </v-row>
-
-      <v-row>
         <v-col cols="10">
           <h3>
-            <b>Usuarios</b>
+            <b>Usuários</b>
           </h3>
           <span>
-            <b>Usuarios dos Departamentos da Empresa.</b>
+            <b>Cadatro simplificado de Usuários .</b>
           </span>
         </v-col>
         <v-spacer></v-spacer>
@@ -73,7 +60,7 @@
           <v-col cols="12" sm="5" style="float: right">
             <v-text-field
               v-model="search"
-              label="Pesquisa Usuarios"
+              label="Pesquisa de Usuários"
               class="mx-4"
               prepend-icon="mdi-magnify"
             ></v-text-field>
@@ -82,24 +69,48 @@
       </v-row>
       <v-row style="margin-top: -30px" align="center" justify="center">
         <v-col cols="12">
-          <k-data-list
+          <v-data-table
             orientation="Horizontal"
             mobileIconAdd="mdi-plus-circle"
-            mobileFunctionAdd="addSolicitacao"
-            @editarItem="editarItem"
-            @deleteItem="deleteItem"
-            @addSolicitacao="addSolicitacao"
             :headers="headers"
             :search="search"
-            :itens="itens"
+            :items="itens"
           >
-            <!-- <template v-slot:dtAdmissao="{ item }">
-            <b>{{ 
-              item.dtAdmissao
-            
-            }}</b>
-            </template>-->
-          </k-data-list>
+            <template v-slot:item.acao="{ item }">
+              <v-row>
+                <v-col  sm="4">
+                  <v-icon
+                    title="Editar dados"
+                    
+                    color="black"
+                    @click="editarItem(item)"
+                    dark
+                    >mdi-pencil</v-icon
+                  >
+                </v-col>
+                <v-col   sm="4">
+                  <v-icon
+                    title="Deletar regstro"
+                    
+                    color="red"
+                    @click="deleteItem(item)"
+                    dark
+                    >mdi-delete</v-icon
+                  >
+                </v-col>
+                <v-col   sm="4">
+                  <v-icon
+                    title="Visualizar dados do usuário e endereços"
+                    
+                    color="green"
+                    @click="visualizarItem(item)"
+                    dark
+                    >mdi-eye</v-icon
+                  >
+                </v-col>
+              </v-row>
+            </template>
+          </v-data-table>
         </v-col>
       </v-row>
     </v-container>
@@ -145,23 +156,6 @@ export default class UsuarioLista extends Vue implements IUsuarioListaView {
   dialogDelete = false;
   itemUsuarioDelete: any;
 
-  caminho = [
-    {
-      text: "Home",
-      disabled: false,
-      href: "/",
-    },
-    {
-      text: "Usuarios",
-      disabled: false,
-      href: "/Usuarios",
-    },
-    {
-      text: "Novo Usuario",
-      disabled: false,
-      href: "/Usuario",
-    },
-  ];
   loading(visible: boolean): void {
     this.dialogLoading = visible;
   }
@@ -187,7 +181,11 @@ export default class UsuarioLista extends Vue implements IUsuarioListaView {
   }
 
   editarItem(item: any) {
-    this.$router.push("/Usuario/" + item.id);
+    this.$router.push("/Usuario/" + item.id + "/1");
+  }
+
+  visualizarItem(item: any) {
+    this.$router.push("/Usuario/" + item.id + "/2");
   }
 
   erpUsuariosCarregar() {
@@ -201,19 +199,39 @@ export default class UsuarioLista extends Vue implements IUsuarioListaView {
 
   isMobile = false;
 
-  headers = new Headers([
-    new Header("Sigla", "sigla", false, false, "center", true, "100"),
-    new Header(
-      "Descrição do Usuario",
-      "descricao",
-      false,
-      false,
-      "left",
-      true,
-      "200"
-    ),
-    new Header("Ações", "acoes", true, false, "center", false, "80"),
-  ]);
+  headers = [
+    {
+      text: "Id",
+      align: "start",
+      sortable: false,
+      value: "id",
+      width: 50,
+    },
+
+    {
+      text: "Nome do usuário",
+      align: "start",
+      sortable: false,
+      value: "nome",
+      width: 100,
+    },
+
+    {
+      text: "E-mail",
+      align: "start",
+      sortable: false,
+      value: "email",
+      width: 140,
+    },
+
+    {
+      text: "Ação",
+      align: "center",
+      sortable: false,
+      value: "acao",
+      width: 20,
+    },
+  ];
 
   itens = [];
 

@@ -24,14 +24,35 @@
       :text="textError"
     ></k-dialog>
 
-    <!-- ADD EVENTO LINHA A ORDEM DE PRODUCAO-->
-    <v-dialog
-      v-model="dialogAddEndereco"
-      scrollable
-      width="1200"
+    <k-dialog
+      :dialog="dialogDeleteUsuario"
+      title="Remover Endereço?"
+      text="O endereço selecionado será removido. Deseja Continuar?"
     >
+      <template v-slot:buttoes>
+        <v-btn
+          @click="cancelaRemoverEndereco()"
+          width="100"
+          text
+          dark
+          color="red darken-2"
+          >Cancelar</v-btn
+        >
+        <v-btn
+          @click="removerEndereco()"
+          width="100"
+          text
+          dark
+          color="green darken-2"
+          >Sim</v-btn
+        >
+      </template>
+    </k-dialog>
+
+    <!-- ADD ENDERECO-->
+    <v-dialog v-model="dialogAddEndereco" scrollable width="1200">
       <v-card>
-        <v-card-title style="background-color: #313c42">
+        <v-card-title style="background-color: #1867c0">
           <span style="color: white" class="headline">
             Endereço do Usuário
           </span>
@@ -47,20 +68,39 @@
             </v-row>
 
             <v-row>
-              <v-col cols="12" sm="2">
-                <v-text-field
-                  outlined
-                  v-model="endereco.cep"
-                  label="CEP *"
-                  placeholder="Consulta Automatica de CEP"
-                  maxl
-                  dense
-                  counter="9"
-                  maxlength="9"
-                  v-mask="maskCep"
-                ></v-text-field>
+              <v-col cols="12" sm="3">
+                <v-row>
+                  <v-col cols="12" sm="11">
+                    <v-text-field
+                      outlined
+                      v-model="endereco.cep"
+                      label="CEP *"
+                      placeholder="Consulta Automatica de CEP"
+                      maxl
+                      dense
+                      counter="9"
+                      maxlength="9"
+                      v-mask="maskCep"
+                    ></v-text-field>
+                  </v-col>
+                  <v-col cols="12" sm="1">
+                    <v-btn
+                      v-if="!isMobile"
+                      color="primary"
+                      fab
+                      dark
+                      small
+                      title="Consulta de CEP (Correios Brasil)"
+                      @click="consultaCEP()"
+                    >
+                      <v-icon dark>mdi-map-marker</v-icon>
+                    </v-btn>
+                  </v-col>
+                </v-row>
               </v-col>
-              <v-col cols="12" sm="10">
+            </v-row>
+            <v-row id="row">
+              <v-col cols="12" sm="9">
                 <v-text-field
                   outlined
                   v-model="endereco.logradouro"
@@ -70,13 +110,17 @@
                   dense
                   counter="80"
                   maxlength="80"
-                  :rules="[
-                    () =>
-                      (!!usuario.logradouro &&
-                        usuario.logradouro.length <= 80) ||
-                      '',
-                  ]"
                 ></v-text-field>
+              </v-col>
+              <v-col cols="12" sm="3">
+                <v-select
+                  outlined
+                  :items="itensTipoEndereco"
+                  v-model="endereco.tipo"
+                  label="Tipo de Endereço *"
+                  placeholder="Selecione o Tipo"
+                  dense
+                ></v-select>
               </v-col>
             </v-row>
             <v-row id="row">
@@ -90,25 +134,18 @@
                   dense
                   counter="80"
                   maxlength="80"
-                  :rules="[
-                    () =>
-                      (!!usuario.bairro && usuario.bairro.length <= 80) || '',
-                  ]"
                 ></v-text-field>
               </v-col>
               <v-col cols="12" sm="2">
                 <v-text-field
                   outlined
-                  v-model="endereco.num"
+                  v-model="endereco.numero"
                   label="Número (ou S/N)*"
                   placeholder="Número"
                   maxl
                   dense
                   counter="5"
                   maxlength="5"
-                  :rules="[
-                    () => (!!usuario.num && usuario.num.length <= 80) || '',
-                  ]"
                 ></v-text-field>
               </v-col>
             </v-row>
@@ -118,42 +155,47 @@
                   outlined
                   v-model="endereco.complemento"
                   label="Complemento "
-                  placeholder="Número"
+                  placeholder="Complemento do Endereço"
                   maxl
                   dense
                   counter="50"
                   maxlength="50"
-                  :rules="[
-                    () =>
-                      (!!usuario.complemento &&
-                        usuario.complemento.length <= 50) ||
-                      '',
-                  ]"
                 ></v-text-field>
               </v-col>
               <v-col cols="12" sm="3">
                 <v-text-field
                   outlined
                   v-model="endereco.localidade"
-                  label="Cidade "
+                  label="Cidade *"
                   placeholder="Cidade"
                   maxl
                   dense
-                  disabled
+                  counter="50"
+                  maxlength="50"
                 ></v-text-field>
               </v-col>
 
               <v-col cols="12" sm="2">
                 <v-text-field
                   outlined
-                  v-model="endereco.localidade"
-                  label="UF "
+                  v-model="endereco.uf"
+                  label="UF *"
                   placeholder="UF"
                   maxl
                   dense
-                  disabled
+                  counter="2"
+                  maxlength="2"
                 ></v-text-field>
               </v-col>
+            </v-row>
+
+            <v-row id="row">
+              <v-spacer></v-spacer>
+              <div>
+                <b style="font-size: 12px"
+                  >Campos obrigatórios identificados com um asterísco *</b
+                >
+              </div>
             </v-row>
           </v-container>
         </v-card-text>
@@ -161,15 +203,15 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn
-            color="orange lighten-1"
+            color="#7BC6FF"
             width="150"
             @click="cancelaAddEndereco"
             dark
             large
             >Cancelar</v-btn
           >
-          <v-btn color="orange darken-1" width="150" dark large @click=""
-            >Adcionar</v-btn
+          <v-btn color="primary" width="150" dark large @click="addEndereco()"
+            >Adicionar</v-btn
           >
         </v-card-actions>
       </v-card>
@@ -191,7 +233,7 @@
             <b>Editando Usuário</b>
           </h3>
           <span>
-            <b>Alterando dados do Usuario no sistema</b>
+            <b>Alterando dados do Usuário no sistema</b>
           </span>
         </v-col>
 
@@ -200,7 +242,6 @@
           <v-col cols="12" sm="12">
             <v-row>
               <v-col cols="12" sm="12">
-                <v-icon large color="green darken-2"> mdi-account </v-icon>
                 <div>Dados do Usuário</div>
               </v-col>
             </v-row>
@@ -215,9 +256,7 @@
                   dense
                   counter="100"
                   maxlength="100"
-                  :rules="[
-                    () => (!!usuario.nome && usuario.nome.length <= 100) || '',
-                  ]"
+                  :disabled="disabledNome"
                 ></v-text-field>
               </v-col>
             </v-row>
@@ -244,6 +283,7 @@
                       outlined
                       dense
                       v-mask="maskDatas"
+                      :disabled="disabledcampos"
                     ></v-text-field>
                   </template>
                   <v-date-picker
@@ -264,6 +304,7 @@
                   counter="14"
                   required
                   maxlength="14"
+                  :disabled="disabledcampos"
                 ></v-text-field>
               </v-col>
             </v-row>
@@ -274,31 +315,24 @@
                   v-model="usuario.email"
                   label="E-mail *"
                   placeholder="Informe o e-mail"
-                  :rules="[
-                    () => (!!usuario.email && usuario.email.length <= 50) || '',
-                  ]"
                   counter="50"
                   dense
                   required
                   maxlength="50"
+                  :disabled="disabledcampos"
                 ></v-text-field>
               </v-col>
               <v-col cols="12" sm="6">
                 <v-text-field
                   outlined
-                  v-model="usuario.confirmaEmail"
+                  v-model="usuario.confirmeEmail"
                   label="Confirmação de e-mail *"
                   placeholder="Redigite o e-mail"
-                  :rules="[
-                    () =>
-                      (!!usuario.confirmaEmail &&
-                        usuario.confirmaEmail.length <= 50) ||
-                      '',
-                  ]"
                   counter="50"
                   dense
                   required
                   maxlength="50"
+                  :disabled="disabledcampos"
                 ></v-text-field>
               </v-col>
             </v-row>
@@ -309,13 +343,12 @@
                   v-model="usuario.senha"
                   label="Senha de Acesso *"
                   placeholder="Informe uma senha de acesso"
-                  :rules="[
-                    () => (!!usuario.senha && usuario.senha.length <= 50) || '',
-                  ]"
                   counter="50"
                   dense
                   required
                   maxlength="50"
+                  type="password"
+                  :disabled="disabledcampos"
                 ></v-text-field>
               </v-col>
 
@@ -325,16 +358,12 @@
                   v-model="usuario.confirmaSenha"
                   label="Confirme a Senha *"
                   placeholder="Redigite a senha"
-                  :rules="[
-                    () =>
-                      (!!usuario.confirmaSenha &&
-                        usuario.confirmaSenha.length <= 50) ||
-                      '',
-                  ]"
                   counter="50"
                   dense
                   required
                   maxlength="50"
+                  type="password"
+                  :disabled="disabledcampos"
                 ></v-text-field>
               </v-col>
             </v-row>
@@ -353,44 +382,67 @@
           <v-col cols="12" sm="12">
             <!-- DADOS DO ENDEREÇO -->
             <v-row id="row2">
-              <v-col cols="12" sm="12">
-                <v-row>
-                  <v-col cols="12" sm="11">
-                    <v-icon large color="green darken-2"> mdi-domain </v-icon>
-                    <div>Endereços</div>
-                  </v-col>
-                  <v-col cols="12" sm="1">
-                    <v-btn
-                      style="margin-top: -8px; margin-left: -30px"
-                      small
-                      v-if="!isMobile"
-                      color="#FB9514"
-                      fab
-                      dark
-                      @click="addEndereco()"
-                    >
-                      <v-icon dark>mdi-plus</v-icon>
-                    </v-btn>
-                  </v-col>
-                </v-row>
+              <v-col cols="12" sm="9">
+                <div>Endereços</div>
+              </v-col>
+
+              <v-col cols="12" sm="3">
+                <v-btn
+                  v-if="!isMobile"
+                  color="#7BC6FF"
+                  large
+                  dark
+                  @click="modalAddEndereco()"
+                  style="float: right"
+                  :disabled="disabledcampos"
+                >
+                  <v-icon dark>mdi-plus</v-icon>Novo Endereço
+                </v-btn>
               </v-col>
             </v-row>
           </v-col>
+
+          <v-col cols="12" sm="12">
+            <k-data-list
+              orientation="Horizontal"
+              mobileIconAdd="mdi-plus-circle"
+              mobileFunctionAdd="addSolicitacao"
+              :headers="headers"
+              :itens="usuario.endereco"
+            >
+              <template v-slot:dados="{ item }">
+                {{
+                  "Endereço: " +
+                  item.logradouro +
+                  ", Bairro: " +
+                  item.bairro +
+                  ", Nº: " +
+                  item.numero
+                }}
+              </template>
+              <template v-slot:acao="{ item }">
+                <v-icon title="Remover endereço selecionado" color="red" :disabled="disabledcampos" @click="deleteItem(item)" dark
+                  >mdi-delete</v-icon
+                >
+              </template>
+            </k-data-list>
+          </v-col>
+
           <v-col cols="12" sm="12">
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn
-                color="orange lighten-1"
+                color="#7BC6FF"
                 @click="retornaListaUsuarios()"
                 large
                 dark
                 width="150"
-                >Cancelar</v-btn
+                >{{this.$route.params.tipo == '2' ? 'Voltar' : 'Cancelar'}}</v-btn
               >
 
               <v-btn
-                v-if="!isMobile && idUsuario"
-                color="orange darken-1"
+                v-if="!isMobile && idUsuario && this.$route.params.tipo == '1'"
+                color="primary"
                 large
                 dark
                 width="150"
@@ -400,7 +452,7 @@
 
               <v-btn
                 v-if="!isMobile && !idUsuario"
-                color="orange darken-1"
+                color="primary"
                 large
                 dark
                 width="150"
@@ -410,7 +462,7 @@
 
               <v-btn
                 v-else-if="isMobile && !idUsuario"
-                color="orange darken-1"
+                color="primary"
                 large
                 dark
                 width="150"
@@ -466,8 +518,12 @@ export default class UsuarioForm extends Vue implements IUsuarioFormView {
   isSucesso = false;
 
   dialogLoading = false;
+  dialogDeleteUsuario = false;
   dialogMessage = false;
   textError = "";
+
+  disabledcampos = false;
+   disabledNome = false;
 
   maskDatas = "##/##/####";
   maskCPF = "###.###.###-##";
@@ -482,9 +538,21 @@ export default class UsuarioForm extends Vue implements IUsuarioFormView {
   dialogAddEndereco = false;
 
   endereco: any = {
+    bairro: "",
     cep: "",
+    complemento: "",
+    ddd: "",
+    gia: "",
+    ibge: "",
+    localidade: "",
+    logradouro: "",
+    siafi: "",
+    uf: "",
+    tipo: "",
+    numero: "",
   };
 
+  itensEndereco: any = [];
   usuario = {
     nome: "",
     email: "",
@@ -495,7 +563,7 @@ export default class UsuarioForm extends Vue implements IUsuarioFormView {
     cpf: "",
     deletado: "N",
     dataCadastro: new Date(),
-    enderecos: this.endereco,
+    endereco: this.itensEndereco,
   };
 
   //SNACKBAR
@@ -505,7 +573,85 @@ export default class UsuarioForm extends Vue implements IUsuarioFormView {
   color = "";
   colorBorder = "";
 
+  itensTipoEndereco = ["RESIDENCIAL", "COMERCIAL", "CORRESPONDÊNCIAS"];
+
+  headers = new Headers([
+    new Header("Tipo de Endereço", "tipo", false, false, "center", true, "100"),
+    new Header("CEP", "cep", false, false, "center", true, "100"),
+    new Header("Dados do Endereço", "dados", false, false, "left", true, "200"),
+    new Header("Ações", "acao", true, false, "center", false, "80"),
+  ]);
+
+  limparCamposEndereco() {
+    this.endereco = {
+      bairro: "",
+      cep: "",
+      complemento: "",
+      ddd: "",
+      gia: "",
+      ibge: "",
+      localidade: "",
+      logradouro: "",
+      siafi: "",
+      uf: "",
+      tipo: "",
+    };
+  }
+
+  itemEnderecoDelete: any = [];
+
+  deleteItem(item: any) {
+    this.itemEnderecoDelete = item;
+    this.dialogDeleteUsuario = true;
+  }
+
+  cancelaRemoverEndereco() {
+    this.itemEnderecoDelete = [];
+    this.dialogDeleteUsuario = false;
+  }
+
+  removerEndereco() {
+    this.usuario.endereco = this.usuario.endereco.filter((t: any) => {
+      return t != this.itemEnderecoDelete;
+    });
+    this.itemEnderecoDelete = [];
+    this.dialogDeleteUsuario = false;
+  }
+
+  consultaCEP() {
+    if (this.validateCep()) {
+    } else {
+      let cep = this.endereco.cep;
+      cep = cep.replace(/[^\d]+/g, "");
+      this.endereco.cep = cep;
+      this._controller!.cosultarEndereco(this.endereco.cep);
+    }
+  }
+
+  carregaEndereco(endereco: any): void {
+    this.endereco = endereco;
+
+    if (endereco.logradouro == null) {
+      this.colorBorder = "error";
+      this.color = "error";
+      this.text = "O CEP consultado é inválido.";
+      this.snackbar = true;
+      return;
+    }
+  }
+
   addEndereco() {
+    if (this.validateEndereco()) {
+    } else {
+      this.usuario.endereco.push(this.endereco);
+      this.dialogAddEndereco = false;
+    }
+
+    console.log(this.usuario.endereco);
+  }
+
+  modalAddEndereco() {
+    this.limparCamposEndereco();
     this.dialogAddEndereco = true;
   }
 
@@ -575,11 +721,71 @@ export default class UsuarioForm extends Vue implements IUsuarioFormView {
     this.dialogMessage = true;
   }
 
+  validateEndereco() {
+    if (this.endereco.cep == "" || this.endereco.cep.length < 0) {
+      this.colorBorder = "error";
+      this.color = "error";
+      this.text = "Informe o CEP para realziar a consulta do endereço.";
+      this.snackbar = true;
+      return true;
+    }
+
+    if (this.endereco.logradouro == "" || this.endereco.logradouro.length < 0) {
+      this.colorBorder = "error";
+      this.color = "error";
+      this.text = "O Endereço está vazio ou inválido.";
+      this.snackbar = true;
+      return true;
+    }
+
+    if (this.endereco.tipo == "" || this.endereco.tipo == null) {
+      this.colorBorder = "error";
+      this.color = "error";
+      this.text = "Selecione o Tipo de Enderço.";
+      this.snackbar = true;
+      return true;
+    }
+
+    if (this.endereco.bairro == "" || this.endereco.bairro == null) {
+      this.colorBorder = "error";
+      this.color = "error";
+      this.text = "O campo Bairro está vazio ou inválido.";
+      this.snackbar = true;
+      return true;
+    }
+
+    if (this.endereco.numero == "" || this.endereco.numero == null) {
+      this.colorBorder = "error";
+      this.color = "error";
+      this.text = "O campo Número está vazio ou inválido.";
+      this.snackbar = true;
+      return true;
+    }
+
+    if (this.endereco.localidade == "" || this.endereco.localidade == null) {
+      this.colorBorder = "error";
+      this.color = "error";
+      this.text = "O campo Cidade está vazio ou inválido.";
+      this.snackbar = true;
+      return true;
+    }
+
+    if (this.endereco.uf == "" || this.endereco.uf == null) {
+      this.colorBorder = "error";
+      this.color = "error";
+      this.text = "O campo UF está vazio ou inválido.";
+      this.snackbar = true;
+      return true;
+    }
+
+    return false;
+  }
+
   validate() {
     if (this.usuario.nome == "" || this.usuario.nome.length > 100) {
       this.colorBorder = "error";
       this.color = "error";
-      this.text = "O campo Nome do Usuario está vazio ou inválido.";
+      this.text = "O campo Nome está vazio ou inválido.";
       this.snackbar = true;
       return true;
     }
@@ -590,6 +796,12 @@ export default class UsuarioForm extends Vue implements IUsuarioFormView {
       this.text = "O campo e-mail do Usuario está vazio ou inválido.";
       this.snackbar = true;
       return true;
+    } else if (this.usuario.email !== this.usuario.confirmeEmail) {
+      this.colorBorder = "error";
+      this.color = "error";
+      this.text = "Os e-mails informados não correspondem.";
+      this.snackbar = true;
+      return true;
     }
 
     if (this.usuario.senha == "" || this.usuario.senha.length > 50) {
@@ -598,19 +810,15 @@ export default class UsuarioForm extends Vue implements IUsuarioFormView {
       this.text = "O campo Senha do Usuario está vazio ou inválido.";
       this.snackbar = true;
       return true;
-    }
-
-    if (this.usuario.cpf == "" || this.usuario.cpf.length > 14) {
+    } else if (this.usuario.senha !== this.usuario.confirmaSenha) {
       this.colorBorder = "error";
       this.color = "error";
-      this.text = "O campo CPF deve ser preenchido.";
+      this.text = "As senhas informadas não correspondem.";
       this.snackbar = true;
       return true;
-    } else if (
-      this.usuario.cpf != "" ||
-      this.usuario.cpf != null ||
-      this.usuario.cpf != undefined
-    ) {
+    }
+
+    if (this.usuario.cpf != "" && this.usuario.cpf.length > 0) {
       let cpf = this.usuario.cpf;
       cpf = cpf.replace(/[^\d]+/g, "");
 
@@ -621,6 +829,26 @@ export default class UsuarioForm extends Vue implements IUsuarioFormView {
         this.snackbar = true;
         return true;
       }
+    }
+
+    if (this.usuario.endereco.length == 0) {
+      this.colorBorder = "error";
+      this.color = "error";
+      this.text = "É necessário informar ao menos um endereço para o usuário.";
+      this.snackbar = true;
+      return true;
+    }
+
+    return false;
+  }
+
+  validateCep() {
+    if (this.endereco.cep == "" || this.endereco.cep.length < 9) {
+      this.colorBorder = "error";
+      this.color = "error";
+      this.text = "O campo CEP está vazio ou inválido.";
+      this.snackbar = true;
+      return true;
     }
 
     return false;
@@ -641,16 +869,48 @@ export default class UsuarioForm extends Vue implements IUsuarioFormView {
   updateUsuario() {
     if (this.validate()) {
     } else {
+      let cpf = this.usuario.cpf;
+      cpf = cpf.replace(/[^\d]+/g, "");
+      this.usuario.cpf = cpf;
       this._controller!.update(this.idUsuario, this.usuario);
     }
   }
 
   carregarDtos(): void {
     this.idUsuario = this.$route.params.id;
+    if (this.$route.params.tipo == "1") {
+      this.disabledcampos = false;
+      
+    } 
+    
+    if (this.$route.params.tipo == "2"){
+      this.disabledcampos = true;
+     
+    }
+
+    if (this.$route.params.tipo == undefined){
+      this.disabledcampos = false;
+      
+    }
+
   }
 
   showUsuarioForEditar(item: any) {
+    this.disabledNome = true;
     this.usuario = item;
+    this.usuario.confirmeEmail = item.email;
+    this.usuario.confirmaSenha = item.senha;
+
+    if (item.cpf != null || item.cpf !== "") {
+      this.usuario.cpf =
+        item.cpf.substring(0, 3) +
+        "." +
+        item.cpf.substring(3, 6) +
+        "." +
+        item.cpf.substring(6, 9) +
+        "-" +
+        item.cpf.substring(9, 13);
+    }
   }
 
   created() {

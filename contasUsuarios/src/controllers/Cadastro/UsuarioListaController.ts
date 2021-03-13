@@ -20,13 +20,6 @@ export class UsuarioListaController implements IUsuarioListaController {
             .get('Usuario')
             .then((response: any) => {
 
-                response.data.forEach((element: { acoes: HeaderAction[]; }) => {
-                    element.acoes = [
-                        new HeaderAction("mdi-pencil", "primary", "Teste", "editarItem", "200px"),
-                        new HeaderAction("mdi-delete", "primary", "Teste", "deleteItem", "200px")
-                    ]
-                });
-
                  this._view.loading(false)
                 this._view.showItens(response.data)
             }).catch((e: any) => {

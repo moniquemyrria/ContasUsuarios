@@ -27,7 +27,7 @@ export default Vue.extend({
       //Storage.salvar("Logado", "false");
      // Storage.salvar("Session", "");
      // Storage.salvar("User", "");
-      this.$router.push("/Home");
+      this.$router.push("/usuarios");
     //}
   }
 });

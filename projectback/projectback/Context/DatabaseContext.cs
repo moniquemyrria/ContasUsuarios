@@ -23,11 +23,9 @@ namespace projectback.Context
             {
                 _ = new AuditTableConfiguration(modelBuilder.Entity<AuditTableDTO>());
 
-
-                
                 _ = new UsuarioConfiguration(modelBuilder.Entity<UsuarioDTO>());
                 
-             
+                _ = new EnderecoConfiguration(modelBuilder.Entity<EnderecoDTO>());
 
             }
         }
@@ -35,8 +33,9 @@ namespace projectback.Context
 
         public DbSet<AuditTableDTO> Audits { get; set; }
 
-        
         public DbSet<UsuarioDTO> Usuarios { get; set; }
+        
+        public DbSet<EnderecoDTO> Enderecos { get; set; }
 
 
         public async Task<int> SaveChangesKodigos(long usuarioId)
@@ -137,8 +136,6 @@ namespace projectback.Context
 
             return SaveChangesAsync();
         }
-
-        //public DbSet<projectback.ModelsData.LinhaSolicitacaoTransferenciaDTO> LinhaSolicitacaoTransferencia { get; set; }
     }
 
     public class AuditEntry

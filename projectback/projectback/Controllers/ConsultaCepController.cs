@@ -22,13 +22,13 @@ namespace projectback.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ConsultaCepControlle : ControllerBase
+    public class ConsultaCepController : ControllerBase
     {
         private readonly DatabaseContext _context;
         private readonly IConfiguration _config;
 
 
-        public ConsultaCepControlle(DatabaseContext context, IConfiguration config)
+        public ConsultaCepController(DatabaseContext context, IConfiguration config)
         {
             _context = context;
             _config = config;

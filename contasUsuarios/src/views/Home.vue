@@ -7,7 +7,6 @@
       @changePass="changePass"
       :menu="menu"
     ></k-menu>
-
     <router-view></router-view>
   </div>
 </template>
@@ -57,19 +56,15 @@ export default class Home extends Vue implements IHomeView {
     this.menu = undefined;
     this.itensMenu = [];
 
+    // if (modulo == "RH") {
+    //CADASTRO
+    this.itensMenu.push(
+      new MenuItem("Cadastro", "", true, [
+        new MenuItem("Usuários", "/usuarios", false),
+      ])
+    );
 
-     // if (modulo == "RH") {
-        //CADASTRO
-        this.itensMenu.push(
-          new MenuItem("Cadastro", "", true, [
-
-            new MenuItem("Usuários", "/usuarios", false),
-
-          ])
-        );
-
-        
-      //}
+    //}
 
     let menu: Menu | undefined = undefined;
 
@@ -91,14 +86,7 @@ export default class Home extends Vue implements IHomeView {
   }
 
   async created() {
-    // var logado = Storage.get("Logado");
-    // if (logado == "true") {
-    //   this.usuario = JSON.parse(Storage.get("Colaborador")!!);
-    //   await this.usuarioPermissaoAcessos();
-      await this.createMenu();
-    // } else {
-    //   this.sair();
-    // }
+    await this.createMenu();
   }
 }
 </script>

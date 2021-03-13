@@ -1,7 +1,7 @@
 <template>
   <v-footer color="primary" app absolute style="color: white;text-aling:center;" fixed>
     <v-spacer></v-spacer>
-    <span style>® Desenvolvido por Kodigos Software Engineering {{new Date().getFullYear()}}</span>
+    <span style>® Desenvolvido por Monique Rocha {{new Date().getFullYear()}}</span>
   </v-footer>
 </template>
 

@@ -33,11 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LibraryKodigos\LibraryKodigos.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ModelView\" />
+    <ProjectReference Include="..\LibraryKodigos\LibraryMR.csproj" />
   </ItemGroup>
 
   <!--<ItemGroup>

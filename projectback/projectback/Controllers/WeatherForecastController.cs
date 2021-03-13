@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using LibraryKodigos;
-using LibraryKodigos.KActiveDirectory;
-using LibraryKodigos.KEmails;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -39,30 +35,5 @@ namespace projectback.Controllers
             .ToArray();
         }
 
-        [HttpGet("Email")]
-        public KRetorno SendEmail()
-        {
-            var list = new List<KUserEmail>
-            {
-                new KUserEmail() { Email = "pedro.pequeno@kodigos.com.br" },
-                new KUserEmail() { Email = "monique.rocha@kodigos.com.br" },
-                new KUserEmail() { Email = "eranio.leite@kodigos.com.br" }
-            };
-
-            KModelEmail kModelEmail = new KModelEmail
-            {
-                EmailFrom = "xxxx",
-                From = new KUserEmail() { Email = "xxxxx", Pass = "xxxxx" },
-                To = list,
-                Body = "<h1>TESTE HTML</h1><b>Teste 1</b>",
-                IsHtml = true,
-                STMP = "smtp.gmail.com",
-                Port = 587,
-                Subject = "Teste 1 bla"
-            };
-
-
-            return KSendEmail.SendEmail(kModelEmail);
-        }
     }
 }

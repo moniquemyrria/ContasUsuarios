@@ -52,6 +52,62 @@ namespace projectback.Migrations
                     b.ToTable("AuditLog");
                 });
 
+            modelBuilder.Entity("projectback.ModelsData.EnderecoDTO", b =>
+                {
+                    b.Property<long>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("bairro")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(80)")
+                        .HasMaxLength(80);
+
+                    b.Property<string>("cep")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
+
+                    b.Property<string>("complemento")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<long>("idUsuario")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("localidade")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("logradouro")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(80)")
+                        .HasMaxLength(80);
+
+                    b.Property<string>("numero")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(5)")
+                        .HasMaxLength(5);
+
+                    b.Property<string>("tipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.Property<string>("uf")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(2)")
+                        .HasMaxLength(2);
+
+                    b.HasKey("id");
+
+                    b.HasIndex("idUsuario");
+
+                    b.ToTable("Enderecos");
+                });
+
             modelBuilder.Entity("projectback.ModelsData.UsuarioDTO", b =>
                 {
                     b.Property<long>("id")
@@ -59,7 +115,14 @@ namespace projectback.Migrations
                         .HasColumnType("bigint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("cpf")
+                        .HasColumnType("nvarchar(13)")
+                        .HasMaxLength(13);
+
                     b.Property<DateTime>("dataCadastro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("dataNascimento")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("deletado")
@@ -67,20 +130,32 @@ namespace projectback.Migrations
                         .HasMaxLength(1);
 
                     b.Property<string>("email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
                     b.Property<string>("nome")
+                        .IsRequired()
                         .HasColumnType("nvarchar(100)")
                         .HasMaxLength(100);
 
                     b.Property<string>("senha")
+                        .IsRequired()
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
                     b.HasKey("id");
 
                     b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("projectback.ModelsData.EnderecoDTO", b =>
+                {
+                    b.HasOne("projectback.ModelsData.UsuarioDTO", "UsuarioDTO")
+                        .WithMany("Endereco")
+                        .HasForeignKey("idUsuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

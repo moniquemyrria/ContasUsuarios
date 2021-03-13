@@ -3522,7 +3522,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "LibraryKodigos/1.0.0": {
+      "LibraryMR/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -3532,10 +3532,10 @@
           "System.DirectoryServices": "4.7.0"
         },
         "compile": {
-          "bin/placeholder/LibraryKodigos.dll": {}
+          "bin/placeholder/LibraryMR.dll": {}
         },
         "runtime": {
-          "bin/placeholder/LibraryKodigos.dll": {}
+          "bin/placeholder/LibraryMR.dll": {}
         }
       }
     }
@@ -10953,17 +10953,17 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "LibraryKodigos/1.0.0": {
+    "LibraryMR/1.0.0": {
       "type": "project",
-      "path": "../LibraryKodigos/LibraryKodigos.csproj",
-      "msbuildProject": "../LibraryKodigos/LibraryKodigos.csproj"
+      "path": "../LibraryKodigos/LibraryMR.csproj",
+      "msbuildProject": "../LibraryKodigos/LibraryMR.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutoMapper >= 10.0.0",
       "Dapper >= 2.0.35",
-      "LibraryKodigos >= 1.0.0",
+      "LibraryMR >= 1.0.0",
       "Microsoft.AspNetCore.Hosting.WindowsServices >= 3.1.1",
       "Microsoft.AspNetCore.StaticFiles >= 2.2.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.12",
@@ -10983,11 +10983,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\wamp64\\www\\ContasUsuarios_ModeloTeste\\projectback\\projectback\\projectback.csproj",
+      "projectUniqueName": "C:\\wamp64\\www\\ContasUsuarios\\projectback\\projectback\\projectback.csproj",
       "projectName": "projectback",
-      "projectPath": "C:\\wamp64\\www\\ContasUsuarios_ModeloTeste\\projectback\\projectback\\projectback.csproj",
+      "projectPath": "C:\\wamp64\\www\\ContasUsuarios\\projectback\\projectback\\projectback.csproj",
       "packagesPath": "C:\\Users\\Monique Rocha\\.nuget\\packages\\",
-      "outputPath": "C:\\wamp64\\www\\ContasUsuarios_ModeloTeste\\projectback\\projectback\\obj\\",
+      "outputPath": "C:\\wamp64\\www\\ContasUsuarios\\projectback\\projectback\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Monique Rocha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11003,8 +11003,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\wamp64\\www\\ContasUsuarios_ModeloTeste\\projectback\\LibraryKodigos\\LibraryKodigos.csproj": {
-              "projectPath": "C:\\wamp64\\www\\ContasUsuarios_ModeloTeste\\projectback\\LibraryKodigos\\LibraryKodigos.csproj"
+            "C:\\wamp64\\www\\ContasUsuarios\\projectback\\LibraryKodigos\\LibraryMR.csproj": {
+              "projectPath": "C:\\wamp64\\www\\ContasUsuarios\\projectback\\LibraryKodigos\\LibraryMR.csproj"
             }
           }
         }

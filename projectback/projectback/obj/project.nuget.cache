@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GUu8zvRmQPLo82z7IBC2+k15zui5eZDPykyLmEMd0aUUJKN1Ssn3kLSuB4lg8TyAq7Zjl/WWSvyqi8mCmX9P+w==",
+  "dgSpecHash": "WsHB/q6/BLeaYIs4AmKhkK29i2KvDe4ENFHrg4+y1je/htrxrJ+4aDHK1xtGKwaMfvTwYasl1q3nBbhgsUP4eQ==",
   "success": true,
-  "projectFilePath": "C:\\wamp64\\www\\ContasUsuarios_ModeloTeste\\projectback\\projectback\\projectback.csproj",
+  "projectFilePath": "C:\\wamp64\\www\\ContasUsuarios\\projectback\\projectback\\projectback.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Monique Rocha\\.nuget\\packages\\aspose.cells\\21.2.0\\aspose.cells.21.2.0.nupkg.sha512",
     "C:\\Users\\Monique Rocha\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",

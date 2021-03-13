@@ -3,7 +3,7 @@ import { Storage } from "../configuration/storage";
 
 var axiosInstance = axios.create({
 
-  //server teste kodigos
+  //server teste 
   // baseURL: 'http://10.0.0.6:5000/api/',
   
   //local
