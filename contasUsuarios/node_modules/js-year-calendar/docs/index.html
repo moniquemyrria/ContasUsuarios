@@ -1,0 +1,239 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>js-year-calendar</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">js-year-calendar</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>js-year-calendar</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#js-year-calendar" id="js-year-calendar" style="color: inherit; text-decoration: none;">
+					<h1>js-year-calendar</h1>
+				</a>
+				<p>A fully customizable year calendar widget</p>
+				<p><img src="https://year-calendar.github.io/assets/img/calendar.png" alt=""></p>
+				<p><a href="https://circleci.com/gh/year-calendar/js-year-calendar/tree/master"><img src="https://img.shields.io/circleci/project/github/year-calendar/js-year-calendar/master.svg" alt="CircleCI"></a>
+					<a href="https://codecov.io/gh/year-calendar/js-year-calendar"><img src="https://img.shields.io/codecov/c/github/year-calendar/js-year-calendar/master.svg" alt="CodeCov"></a>
+				<a href="https://www.npmjs.com/package/js-year-calendar"><img src="https://img.shields.io/npm/dw/js-year-calendar.svg" alt="NPM"></a></p>
+				<p>This library is also available for:</p>
+				<p><a href="https://github.com/year-calendar/rc-year-calendar"><img src="https://year-calendar.github.io/assets/img/react.png" alt="React.js"></a>
+				<a href="https://github.com/year-calendar/v-year-calendar"><img src="https://year-calendar.github.io/assets/img/vue.png" alt="Vue.js"></a></p>
+				<a href="#requirements" id="requirements" style="color: inherit; text-decoration: none;">
+					<h2>Requirements</h2>
+				</a>
+				<p>This plugin uses pure javascript. No library is required.</p>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h2>Installation</h2>
+				</a>
+				<p>You can get the widget using the following methods:</p>
+				<ul>
+					<li>From the <a href="https://github.com/year-calendar/js-year-calendar/releases">GitHub repository</a></li>
+					<li>From the Node package manager, using the following command: <code>npm install js-year-calendar</code></li>
+					<li>From Yarn, using the following command: <code>yarn add js-year-calendar</code></li>
+					<li>From the CDN, by adding the following script directly in your HTML page:</li>
+				</ul>
+				<p><code>&lt;script src=&quot;https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.js&quot;&gt;&lt;/script&gt;</code></p>
+				<p>AND</p>
+				<p><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.css&quot; /&gt;</code></p>
+				<a href="#initialization" id="initialization" style="color: inherit; text-decoration: none;">
+					<h2>Initialization</h2>
+				</a>
+				<p>If you&#39;re using javascript modules, don&#39;t forget to import the library:</p>
+				<pre><code><span class="hljs-keyword">import</span> Calendar <span class="hljs-keyword">from</span> <span class="hljs-string">'js-year-calendar'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'js-year-calendar/dist/js-year-calendar.css'</span>;</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<p>You can create a calendar using the following javascript code :</p>
+				<pre><code><span class="hljs-keyword">new</span> <span class="hljs-type">Calendar</span>(<span class="hljs-string">'.calendar'</span>)</code></pre><p>Or</p>
+				<pre><code><span class="hljs-keyword">new</span> <span class="hljs-constructor">Calendar(<span class="hljs-params">document</span>.<span class="hljs-params">querySelector</span>('.<span class="hljs-params">calendar</span>')</span>);</code></pre><p>Where <code>.calendar</code> is the selector of a <code>DIV</code> element that should contain your calendar.</p>
+				<p>You can also use the following HTML if you don&#39;t want to use javascript to initialize the calendar</p>
+				<pre><code>&lt;<span class="hljs-keyword">div</span> data-provide=<span class="hljs-string">"calendar"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre><p>The calendar will be automatically created when the page will finish loading</p>
+				<a href="#using-options" id="using-options" style="color: inherit; text-decoration: none;">
+					<h2>Using options</h2>
+				</a>
+				<p>You can specify options to customize the calendar:</p>
+				<pre><code><span class="hljs-keyword">new</span> Calendar(<span class="hljs-string">'.calendar'</span>, {
+    <span class="hljs-attr">style</span>: <span class="hljs-string">'background'</span>,
+    <span class="hljs-attr">minDate</span>: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()
+})</code></pre><p>You can find the exhaustive list of options in the <a href="https://year-calendar.github.io/js-year-calendar/documentation">documentation</a>.</p>
+				<a href="#language" id="language" style="color: inherit; text-decoration: none;">
+					<h2>Language</h2>
+				</a>
+				<p>If you want to use the calendar in a different language, you should import the locale file corresponding to the language you want to use, and then set the <code>language</code> prop of the calendar:</p>
+				<pre><code><span class="hljs-keyword">import</span> Calendar <span class="hljs-keyword">from</span> <span class="hljs-string">'js-year-calendar'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'js-year-calendar/locales/js-year-calendar.fr'</span>;</code></pre><p>OR</p>
+				<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.umd.min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://unpkg.com/js-year-calendar@latest/locales/js-year-calendar.fr.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre><p>Then</p>
+				<pre><code><span class="hljs-built_in">new</span> Calendar(<span class="hljs-string">'.calendar'</span>, {
+    <span class="hljs-keyword">language</span>: <span class="hljs-string">'fr'</span>
+})</code></pre><p>The list of available languages is available <a href="https://github.com/year-calendar/js-year-calendar/tree/master/locales">here</a></p>
+				<a href="#updating-calendar" id="updating-calendar" style="color: inherit; text-decoration: none;">
+					<h2>Updating calendar</h2>
+				</a>
+				<p>You can update the calendar after being instantiated:</p>
+				<pre><code>const calendar = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Calendar('.<span class="hljs-params">calendar</span>')</span>;
+
+calendar.set<span class="hljs-constructor">Style('<span class="hljs-params">background</span>')</span>;
+calendar.set<span class="hljs-constructor">MaxDate(<span class="hljs-params">new</span> Date()</span>);</code></pre><p>You can find the exhaustive list of methods in the <a href="https://year-calendar.github.io/js-year-calendar/documentation">documentation</a>.</p>
+				<a href="#events" id="events" style="color: inherit; text-decoration: none;">
+					<h2>Events</h2>
+				</a>
+				<p>You can bind events to the calendar at initialization</p>
+				<pre><code><span class="hljs-keyword">const</span> calendar = <span class="hljs-keyword">new</span> Calendar(<span class="hljs-string">'.calendar'</span>, {
+    clickDay: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> </span>{
+        alert(<span class="hljs-string">'Click on day '</span> + e.date.toString());
+    }
+});</code></pre><p>or later</p>
+				<pre><code><span class="hljs-keyword">new</span> <span class="hljs-constructor">Calendar('.<span class="hljs-params">calendar</span>')</span>;
+document.query<span class="hljs-constructor">Selector('.<span class="hljs-params">calendar</span>')</span>.add<span class="hljs-constructor">EventListener('<span class="hljs-params">clickDay</span>', <span class="hljs-params">function</span>(<span class="hljs-params">e</span>)</span> {
+    alert('Click on day ' + e.date.<span class="hljs-keyword">to</span><span class="hljs-constructor">String()</span>);
+});</code></pre><p>You can find the exhaustive list of events in the <a href="https://year-calendar.github.io/js-year-calendar/documentation">documentation</a>.</p>
+				<a href="#migrating-from-bootstrap-year-calendar" id="migrating-from-bootstrap-year-calendar" style="color: inherit; text-decoration: none;">
+					<h2>Migrating from bootstrap-year-calendar</h2>
+				</a>
+				<p>This widget is based on the <a href="https://github.com/Paul-DS/bootstrap-year-calendar">bootstrap-year-calendar</a> widget.
+				If you were using this widget, these are the modifications to apply to successfully migrate your project:</p>
+				<a href="#initialization-1" id="initialization-1" style="color: inherit; text-decoration: none;">
+					<h3>Initialization</h3>
+				</a>
+				<p>The project doesn&#39;t use jQuery anymore, so the initialization of the calendar will be using pure Javascript.</p>
+				<p>The old code:</p>
+				<pre><code>$(<span class="hljs-string">'.calendar'</span>).calendar({ <span class="hljs-comment">/* Options */</span> })</code></pre><p>Will be replaced by:</p>
+				<pre><code><span class="hljs-keyword">new</span> <span class="hljs-type">Calendar</span>(<span class="hljs-string">'.calendar'</span>, { <span class="hljs-comment">/* Options */</span> });</code></pre><p>Or </p>
+				<pre><code><span class="hljs-keyword">new</span> <span class="hljs-type">Calendar</span>($(<span class="hljs-string">'.calendar'</span>).<span class="hljs-keyword">get</span>(<span class="hljs-number">0</span>), { <span class="hljs-comment">/* Options */</span> });
+<span class="hljs-comment">// Use ".get(0)" to get the DOM element from the jQuery element</span></code></pre>
+				<a href="#get-the-calendar-from-the-dom-element" id="get-the-calendar-from-the-dom-element" style="color: inherit; text-decoration: none;">
+					<h3>Get the calendar from the DOM element</h3>
+				</a>
+				<p>Given that the widget doesn&#39;t rely on jQuery, it won&#39;t be possible to get the calendar instance from the DOM element anymore:</p>
+				<pre><code><span class="hljs-symbol">$</span>(<span class="hljs-string">'.calendar'</span>).data(<span class="hljs-string">'calendar'</span>).<span class="hljs-keyword">set</span>...();</code></pre><p>You will have to store the instance of the calendar by yourself:</p>
+				<pre><code>const calendar = <span class="hljs-literal">new</span> Calendar(<span class="hljs-string">'.calendar'</span>);
+
+<span class="hljs-params">...</span>
+
+calendar.<span class="hljs-built_in">set</span><span class="hljs-params">...</span>();</code></pre>
+				<a href="#what-next" id="what-next" style="color: inherit; text-decoration: none;">
+					<h2>What next</h2>
+				</a>
+				<p>Check the <a href="https://year-calendar.github.io/js-year-calendar/documentation">documentation</a> and <a href="https://year-calendar.github.io/rc-year-calendar/examples">examples</a> pages to discover all the functionalities.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/__global.html">__global</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/calendar.html" class="tsd-kind-icon">Calendar</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter tsd-is-external">
+						<a href="interfaces/calendarcontextmenuitem.html" class="tsd-kind-icon">Calendar<wbr>Context<wbr>Menu<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/calendardatasourceelement.html" class="tsd-kind-icon">Calendar<wbr>Data<wbr>Source<wbr>Element</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter tsd-is-external">
+						<a href="interfaces/calendardayeventobject.html" class="tsd-kind-icon">Calendar<wbr>Day<wbr>Event<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter tsd-is-external">
+						<a href="interfaces/calendaroptions.html" class="tsd-kind-icon">Calendar<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/calendarrangeeventobject.html" class="tsd-kind-icon">Calendar<wbr>Range<wbr>Event<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/calendarrenderendeventobject.html" class="tsd-kind-icon">Calendar<wbr>Render<wbr>End<wbr>Event<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/calendaryearchangedeventobject.html" class="tsd-kind-icon">Calendar<wbr>Year<wbr>Changed<wbr>Event<wbr>Object</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
