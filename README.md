@@ -5,14 +5,11 @@
 ###### 1. Back-End: Linguagem C# utilizando o Framework Entity
 ###### 2. Front-End: Linguagem JavaScript (TypeScript)  utilizando o Framework VUE, VUECli e Vuetify e NODEJs
 
-
-<br>
 Clone do Projeto 
 ---
 1. Acesse: https://github.com/moniquemyrria/ContasUsuarios
 
 
-<br>
 Ferramentas necessárias para utilização do projeto
 ---
 Ferramentas necessárias:
@@ -20,16 +17,15 @@ Ferramentas necessárias:
 2. Microsoft Visual Studio Code
 3. Microsoft SQL Server 2017
 
-<br>
 Instanciando Database da Aplicação
 ---
 1. Importe o banco de dados CONTAS_USER que se encontra na pasta DB
-<br>
+
 ou
-<br>
+
 2, Crie o banco de dados utilizando o arquivo Script_DB_CONTAS_USER
 
-<br>
+
 Iniciando Back-End da Aplicação
 ---
 - Abra o projeto na pasta Projectback
