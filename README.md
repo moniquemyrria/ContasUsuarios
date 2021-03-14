@@ -34,14 +34,18 @@ Iniciando Back-End da Aplicação
 <br>
 Iniciando Front-End da Aplicação
 ---
-- Abra o projeto na pasta ContasUsuarios
-- Abra um terminal e instale as bibliotecas do NODEJS 
-<br>
-`` npm install``
+1. Abra o projeto na pasta ContasUsuarios
+2. Abra um terminal e instale as bibliotecas do NODEJS 
 
-- Inicie o projeto 
-<br>
-`` npm run serve``
+```
+npm install
+```
+
+3. Inicie o projeto 
+
+```
+npm run serve
+```
 
 Estrutura da Aplicação Fron-End
 ---
