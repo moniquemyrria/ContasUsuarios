@@ -23,7 +23,7 @@ Instanciando Database da Aplicação
 
 ou
 
-2, Crie o banco de dados utilizando o arquivo Script_DB_CONTAS_USER
+2. Crie o banco de dados utilizando o arquivo Script_DB_CONTAS_USER
 
 
 Iniciando Back-End da Aplicação
@@ -37,11 +37,11 @@ Iniciando Front-End da Aplicação
 - Abra o projeto na pasta ContasUsuarios
 - Abra um terminal e instale as bibliotecas do NODEJS 
 <br>
-``npm install``
+`` npm install``
 
 - Inicie o projeto 
 <br>
-``npm run serve``
+`` npm run serve``
 
 Estrutura da Aplicação Fron-End
 ---
@@ -49,13 +49,13 @@ Estrutura da Aplicação Fron-End
 #### O Padrão de Projeto utilizado é MVC (Model-View-Controller)
 <br>
 
-- View: Telas de Listagens, Formularios e Models
+1. View: Telas de Listagens, Formularios e Models
 ```
 created() {
     this._controller.carregarItens();
   }
 ```
-- Contracts: Funções de Comunicação Entre Tela e Controller
+2. Contracts: Funções de Comunicação Entre Tela e Controller
 ```
 export interface IUsuarioListaView {
     showItens(list: []): void
@@ -65,7 +65,7 @@ export interface IUsuarioListaController {
     carregarItens(): void
 }
 ```
-- Controllers: Funções de Comunicação entre Contracts e Banco de Dados
+3. Controllers: Funções de Comunicação entre Contracts e Banco de Dados
 
 ```
     carregarItens(): void {
@@ -85,7 +85,7 @@ Estrutura da Aplicação Back-End
 #### O Padrão de Projeto utilizado é MVC (Model-View-Controller)
 
 
-- ModelData: Estrutura de modelo do banco de dados
+1. ModelData: Estrutura de modelo do banco de dados
 
 <br>
 
@@ -101,7 +101,7 @@ Estrutura da Aplicação Back-End
     }
 ```
 
-- ModelView: Estrutura JSON da Tela View Front-End
+2. ModelView: Estrutura JSON da Tela View Front-End
 
 <br>
 
@@ -121,7 +121,7 @@ public class UsuarioViewModel
     }
 ```
 
-- Controllers: Comunicação Banco de dados e Models com os métodos (GET / PUT / POST / DELETE)
+3. Controllers: Comunicação Banco de dados e Models com os métodos (GET / PUT / POST / DELETE)
 
 <br>
 
