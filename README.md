@@ -9,25 +9,25 @@
 <br>
 Clone do Projeto 
 ---
-- Acesse: https://github.com/moniquemyrria/ContasUsuarios
+1. Acesse: https://github.com/moniquemyrria/ContasUsuarios
 
 
 <br>
 Ferramentas necessárias para utilização do projeto
 ---
 Ferramentas necessárias:
-- Microsoft Visual Studio Community
-- Microsoft Visual Studio Code
-- Microsoft SQL Server 2017
+1. Microsoft Visual Studio Community
+2. Microsoft Visual Studio Code
+3. Microsoft SQL Server 2017
 
 <br>
 Instanciando Database da Aplicação
 ---
-- Importe o banco de dados CONTAS_USER que se encontra na pasta DB
+1. Importe o banco de dados CONTAS_USER que se encontra na pasta DB
 <br>
 ou
 <br>
-- Crie o banco de dados utilizando o arquivo Script_DB_CONTAS_USER
+2, Crie o banco de dados utilizando o arquivo Script_DB_CONTAS_USER
 
 <br>
 Iniciando Back-End da Aplicação
