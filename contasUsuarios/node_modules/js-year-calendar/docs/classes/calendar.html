@@ -1,0 +1,2132 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Calendar | js-year-calendar</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">js-year-calendar</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="calendar.html">Calendar</a>
+				</li>
+			</ul>
+			<h1>Class Calendar&lt;T&gt;</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Calendar instance.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T<span class="tsd-signature-symbol">: </span><a href="../interfaces/calendardatasourceelement.html" class="tsd-signature-type">CalendarDataSourceElement</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Calendar</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="calendar.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Events</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-event tsd-parent-kind-class"><a href="calendar.html#clickday" class="tsd-kind-icon">click<wbr>Day</a></li>
+								<li class="tsd-kind-event tsd-parent-kind-class"><a href="calendar.html#daycontextmenu" class="tsd-kind-icon">day<wbr>Context<wbr>Menu</a></li>
+								<li class="tsd-kind-event tsd-parent-kind-class"><a href="calendar.html#mouseonday" class="tsd-kind-icon">mouse<wbr>OnDay</a></li>
+								<li class="tsd-kind-event tsd-parent-kind-class"><a href="calendar.html#mouseoutday" class="tsd-kind-icon">mouse<wbr>Out<wbr>Day</a></li>
+								<li class="tsd-kind-event tsd-parent-kind-class"><a href="calendar.html#renderend" class="tsd-kind-icon">render<wbr>End</a></li>
+								<li class="tsd-kind-event tsd-parent-kind-class"><a href="calendar.html#selectrange" class="tsd-kind-icon">select<wbr>Range</a></li>
+								<li class="tsd-kind-event tsd-parent-kind-class"><a href="calendar.html#yearchanged" class="tsd-kind-icon">year<wbr>Changed</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#addevent" class="tsd-kind-icon">add<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getallowoverlap" class="tsd-kind-icon">get<wbr>Allow<wbr>Overlap</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getalwayshalfday" class="tsd-kind-icon">get<wbr>Always<wbr>Half<wbr>Day</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getcontextmenuitems" class="tsd-kind-icon">get<wbr>Context<wbr>Menu<wbr>Items</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getcustomdatasourcerenderer" class="tsd-kind-icon">get<wbr>Custom<wbr>Data<wbr>Source<wbr>Renderer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getcustomdayrenderer" class="tsd-kind-icon">get<wbr>Custom<wbr>Day<wbr>Renderer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getdatasource" class="tsd-kind-icon">get<wbr>Data<wbr>Source</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getdisableddays" class="tsd-kind-icon">get<wbr>Disabled<wbr>Days</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getdisabledweekdays" class="tsd-kind-icon">get<wbr>Disabled<wbr>Week<wbr>Days</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getdisplaydisableddatasource" class="tsd-kind-icon">get<wbr>Display<wbr>Disabled<wbr>Data<wbr>Source</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getdisplayheader" class="tsd-kind-icon">get<wbr>Display<wbr>Header</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getdisplayweeknumber" class="tsd-kind-icon">get<wbr>Display<wbr>Week<wbr>Number</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getenablecontextmenu" class="tsd-kind-icon">get<wbr>Enable<wbr>Context<wbr>Menu</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getenablerangeselection" class="tsd-kind-icon">get<wbr>Enable<wbr>Range<wbr>Selection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getevents" class="tsd-kind-icon">get<wbr>Events</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#geteventsonrange" class="tsd-kind-icon">get<wbr>Events<wbr>OnRange</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#gethiddenweekdays" class="tsd-kind-icon">get<wbr>Hidden<wbr>Week<wbr>Days</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getlanguage" class="tsd-kind-icon">get<wbr>Language</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getloadingtemplate" class="tsd-kind-icon">get<wbr>Loading<wbr>Template</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getmaxdate" class="tsd-kind-icon">get<wbr>Max<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getmindate" class="tsd-kind-icon">get<wbr>Min<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getroundrangelimits" class="tsd-kind-icon">get<wbr>Round<wbr>Range<wbr>Limits</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getstyle" class="tsd-kind-icon">get<wbr>Style</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getweeknumber" class="tsd-kind-icon">get<wbr>Week<wbr>Number</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getweekstart" class="tsd-kind-icon">get<wbr>Week<wbr>Start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#getyear" class="tsd-kind-icon">get<wbr>Year</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#istherefreeslot" class="tsd-kind-icon">is<wbr>There<wbr>Free<wbr>Slot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#render" class="tsd-kind-icon">render</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setallowoverlap" class="tsd-kind-icon">set<wbr>Allow<wbr>Overlap</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setalwayshalfday" class="tsd-kind-icon">set<wbr>Always<wbr>Half<wbr>Day</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setcontextmenuitems" class="tsd-kind-icon">set<wbr>Context<wbr>Menu<wbr>Items</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setcustomdatasourcerenderer" class="tsd-kind-icon">set<wbr>Custom<wbr>Data<wbr>Source<wbr>Renderer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setcustomdayrenderer" class="tsd-kind-icon">set<wbr>Custom<wbr>Day<wbr>Renderer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setdatasource" class="tsd-kind-icon">set<wbr>Data<wbr>Source</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setdisableddays" class="tsd-kind-icon">set<wbr>Disabled<wbr>Days</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setdisabledweekdays" class="tsd-kind-icon">set<wbr>Disabled<wbr>Week<wbr>Days</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setdisplaydisableddatasource" class="tsd-kind-icon">set<wbr>Display<wbr>Disabled<wbr>Data<wbr>Source</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setdisplayheader" class="tsd-kind-icon">set<wbr>Display<wbr>Header</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setdisplayweeknumber" class="tsd-kind-icon">set<wbr>Display<wbr>Week<wbr>Number</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setenablecontextmenu" class="tsd-kind-icon">set<wbr>Enable<wbr>Context<wbr>Menu</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setenablerangeselection" class="tsd-kind-icon">set<wbr>Enable<wbr>Range<wbr>Selection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#sethiddenweekdays" class="tsd-kind-icon">set<wbr>Hidden<wbr>Week<wbr>Days</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setlanguage" class="tsd-kind-icon">set<wbr>Language</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setloadingtemplate" class="tsd-kind-icon">set<wbr>Loading<wbr>Template</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setmaxdate" class="tsd-kind-icon">set<wbr>Max<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setmindate" class="tsd-kind-icon">set<wbr>Min<wbr>Date</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setroundrangelimits" class="tsd-kind-icon">set<wbr>Round<wbr>Range<wbr>Limits</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setstyle" class="tsd-kind-icon">set<wbr>Style</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setweekstart" class="tsd-kind-icon">set<wbr>Week<wbr>Start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="calendar.html#setyear" class="tsd-kind-icon">set<wbr>Year</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Calendar<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/calendaroptions.html" class="tsd-signature-type">CalendarOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="calendar.html" class="tsd-signature-type">Calendar</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L174">js-year-calendar.ts:174</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new calendar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element: <span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The element (or the selector to an element) in which the calendar should be created.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/calendaroptions.html" class="tsd-signature-type">CalendarOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The options used to customize the calendar</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="calendar.html" class="tsd-signature-type">Calendar</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Events</h2>
+				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-class">
+					<a name="clickday" class="tsd-anchor"></a>
+					<h3>click<wbr>Day</h3>
+					<div class="tsd-signature tsd-kind-icon">click<wbr>Day<span class="tsd-signature-symbol">:</span> <a href="../interfaces/calendardayeventobject.html" class="tsd-signature-type">CalendarDayEventObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L94">js-year-calendar.ts:94</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Fired when a day is clicked.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>example</dt>
+							<dd><pre><code>
+document.querySelector(<span class="hljs-string">'.calendar'</span>).addEventListener(<span class="hljs-string">'clickDay'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> {</span>
+  console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"Click on day: "</span> + e.date + <span class="hljs-string">" ("</span> + e.<span class="hljs-keyword">events</span>.<span class="hljs-built_in">length</span> + <span class="hljs-string">" events)"</span>);
+})</code></pre></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-class">
+					<a name="daycontextmenu" class="tsd-anchor"></a>
+					<h3>day<wbr>Context<wbr>Menu</h3>
+					<div class="tsd-signature tsd-kind-icon">day<wbr>Context<wbr>Menu<span class="tsd-signature-symbol">:</span> <a href="../interfaces/calendardayeventobject.html" class="tsd-signature-type">CalendarDayEventObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L107">js-year-calendar.ts:107</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Fired when a day is right clicked.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>example</dt>
+							<dd><pre><code>
+document.querySelector(<span class="hljs-string">'.calendar'</span>).addEventListener(<span class="hljs-string">'clickDay'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> {</span>
+  console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"Right click on day: "</span> + e.date + <span class="hljs-string">" ("</span> + e.<span class="hljs-keyword">events</span>.<span class="hljs-built_in">length</span> + <span class="hljs-string">" events)"</span>);
+})</code></pre></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-class">
+					<a name="mouseonday" class="tsd-anchor"></a>
+					<h3>mouse<wbr>OnDay</h3>
+					<div class="tsd-signature tsd-kind-icon">mouse<wbr>OnDay<span class="tsd-signature-symbol">:</span> <a href="../interfaces/calendardayeventobject.html" class="tsd-signature-type">CalendarDayEventObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L120">js-year-calendar.ts:120</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Fired when the mouse enter in a day.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>example</dt>
+							<dd><pre><code>
+document.querySelector(<span class="hljs-string">'.calendar'</span>).addEventListener(<span class="hljs-string">'mouseOnDay'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> {</span>
+  console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"Mouse enter in a day: "</span> + e.date + <span class="hljs-string">" ("</span> + e.<span class="hljs-keyword">events</span>.<span class="hljs-built_in">length</span> + <span class="hljs-string">" events)"</span>);
+})</code></pre></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-class">
+					<a name="mouseoutday" class="tsd-anchor"></a>
+					<h3>mouse<wbr>Out<wbr>Day</h3>
+					<div class="tsd-signature tsd-kind-icon">mouse<wbr>Out<wbr>Day<span class="tsd-signature-symbol">:</span> <a href="../interfaces/calendardayeventobject.html" class="tsd-signature-type">CalendarDayEventObject</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L133">js-year-calendar.ts:133</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Fired when the mouse leave a day.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>example</dt>
+							<dd><pre><code>
+document.querySelector(<span class="hljs-string">'.calendar'</span>).addEventListener(<span class="hljs-string">'mouseOutDay'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> {</span>
+  console.<span class="hljs-built_in">log</span>(<span class="hljs-string">"Mouse leave a day: "</span> + e.date + <span class="hljs-string">" ("</span> + e.<span class="hljs-keyword">events</span>.<span class="hljs-built_in">length</span> + <span class="hljs-string">" events)"</span>);
+})</code></pre></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-class">
+					<a name="renderend" class="tsd-anchor"></a>
+					<h3>render<wbr>End</h3>
+					<div class="tsd-signature tsd-kind-icon">render<wbr>End<span class="tsd-signature-symbol">:</span> <a href="../interfaces/calendarrenderendeventobject.html" class="tsd-signature-type">CalendarRenderEndEventObject</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L146">js-year-calendar.ts:146</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Fired when the calendar rendering is ended.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>example</dt>
+							<dd><pre><code>
+<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'.calendar'</span>).addEventListener(<span class="hljs-string">'renderEnd'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Render end for year: "</span> + e.currentYear);
+})</code></pre></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-class">
+					<a name="selectrange" class="tsd-anchor"></a>
+					<h3>select<wbr>Range</h3>
+					<div class="tsd-signature tsd-kind-icon">select<wbr>Range<span class="tsd-signature-symbol">:</span> <a href="../interfaces/calendarrangeeventobject.html" class="tsd-signature-type">CalendarRangeEventObject</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L161">js-year-calendar.ts:161</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Fired when a date range is selected.</p>
+						</div>
+						<p>Don&#39;t forget to enable the <code>enableRangeSelection</code> option to be able to use the range selection functionality.</p>
+						<dl class="tsd-comment-tags">
+							<dt>example</dt>
+							<dd><pre><code>
+<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'.calendar'</span>).addEventListener(<span class="hljs-string">'selectRange'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Select the range: "</span> + e.startDate + <span class="hljs-string">" - "</span> + e.endDate);
+})</code></pre></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-class">
+					<a name="yearchanged" class="tsd-anchor"></a>
+					<h3>year<wbr>Changed</h3>
+					<div class="tsd-signature tsd-kind-icon">year<wbr>Changed<span class="tsd-signature-symbol">:</span> <a href="../interfaces/calendaryearchangedeventobject.html" class="tsd-signature-type">CalendarYearChangedEventObject</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L174">js-year-calendar.ts:174</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Triggered after the changing the current year.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>example</dt>
+							<dd><pre><code>
+<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'.calendar'</span>).addEventListener(<span class="hljs-string">'yearChanged'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"New year selected: "</span> + e.currentYear);
+})</code></pre></dd>
+						</dl>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addevent" class="tsd-anchor"></a>
+					<h3>add<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<span class="tsd-signature-symbol">(</span>evt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1813">js-year-calendar.ts:1813</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add a new element to the data source.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>evt: <span class="tsd-signature-type">T</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Indicates whether the calendar shouldn&#39;t be refreshed once the event added.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getallowoverlap" class="tsd-anchor"></a>
+					<h3>get<wbr>Allow<wbr>Overlap</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Allow<wbr>Overlap<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1392">js-year-calendar.ts:1392</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a value indicating whether the user can select a range which overlapping an other element present in the datasource.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getalwayshalfday" class="tsd-anchor"></a>
+					<h3>get<wbr>Always<wbr>Half<wbr>Day</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Always<wbr>Half<wbr>Day<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1477">js-year-calendar.ts:1477</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a value indicating whether the beginning and the end of each range should be displayed as half selected day.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getcontextmenuitems" class="tsd-anchor"></a>
+					<h3>get<wbr>Context<wbr>Menu<wbr>Items</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Context<wbr>Menu<wbr>Items<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/calendarcontextmenuitem.html" class="tsd-signature-type">CalendarContextMenuItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1638">js-year-calendar.ts:1638</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the context menu items.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/calendarcontextmenuitem.html" class="tsd-signature-type">CalendarContextMenuItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getcustomdatasourcerenderer" class="tsd-anchor"></a>
+					<h3>get<wbr>Custom<wbr>Data<wbr>Source<wbr>Renderer</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Custom<wbr>Data<wbr>Source<wbr>Renderer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, currentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, events<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1684">js-year-calendar.ts:1684</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the custom data source renderer.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, currentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, events<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-signature">
+									<ul class="tsd-signatures tsd-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, currentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, events<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>element: <span class="tsd-signature-type">HTMLElement</span></h5>
+												</li>
+												<li>
+													<h5>currentDate: <span class="tsd-signature-type">Date</span></h5>
+												</li>
+												<li>
+													<h5>events: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getcustomdayrenderer" class="tsd-anchor"></a>
+					<h3>get<wbr>Custom<wbr>Day<wbr>Renderer</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Custom<wbr>Day<wbr>Renderer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, currentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1661">js-year-calendar.ts:1661</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the custom day renderer.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, currentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-signature">
+									<ul class="tsd-signatures tsd-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, currentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>element: <span class="tsd-signature-type">HTMLElement</span></h5>
+												</li>
+												<li>
+													<h5>currentDate: <span class="tsd-signature-type">Date</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getdatasource" class="tsd-anchor"></a>
+					<h3>get<wbr>Data<wbr>Source</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Data<wbr>Source<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>currentYear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>currentYear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, done<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1732">js-year-calendar.ts:1732</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the current data source.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>currentYear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>currentYear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, done<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getdisableddays" class="tsd-anchor"></a>
+					<h3>get<wbr>Disabled<wbr>Days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Disabled<wbr>Days<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1523">js-year-calendar.ts:1523</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the disabled days.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getdisabledweekdays" class="tsd-anchor"></a>
+					<h3>get<wbr>Disabled<wbr>Week<wbr>Days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Disabled<wbr>Week<wbr>Days<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1546">js-year-calendar.ts:1546</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the disabled days of the week.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getdisplaydisableddatasource" class="tsd-anchor"></a>
+					<h3>get<wbr>Display<wbr>Disabled<wbr>Data<wbr>Source</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Display<wbr>Disabled<wbr>Data<wbr>Source<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1454">js-year-calendar.ts:1454</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a value indicating whether the data source must be rendered on disabled days.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getdisplayheader" class="tsd-anchor"></a>
+					<h3>get<wbr>Display<wbr>Header</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Display<wbr>Header<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1431">js-year-calendar.ts:1431</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a value indicating whether the calendar header is displayed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getdisplayweeknumber" class="tsd-anchor"></a>
+					<h3>get<wbr>Display<wbr>Week<wbr>Number</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Display<wbr>Week<wbr>Number<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1408">js-year-calendar.ts:1408</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a value indicating whether the weeks number are displayed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getenablecontextmenu" class="tsd-anchor"></a>
+					<h3>get<wbr>Enable<wbr>Context<wbr>Menu</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Enable<wbr>Context<wbr>Menu<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1615">js-year-calendar.ts:1615</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a value indicating whether the default context menu must be displayed when right clicking on a day.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getenablerangeselection" class="tsd-anchor"></a>
+					<h3>get<wbr>Enable<wbr>Range<wbr>Selection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Enable<wbr>Range<wbr>Selection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1500">js-year-calendar.ts:1500</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a value indicating whether the user can make range selection.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getevents" class="tsd-anchor"></a>
+					<h3>get<wbr>Events</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Events<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1225">js-year-calendar.ts:1225</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the data source elements for a specified day.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>date: <span class="tsd-signature-type">Date</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The specified day.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="geteventsonrange" class="tsd-anchor"></a>
+					<h3>get<wbr>Events<wbr>OnRange</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Events<wbr>OnRange<span class="tsd-signature-symbol">(</span>startDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, endDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1235">js-year-calendar.ts:1235</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the data source elements for a specified range of days.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>startDate: <span class="tsd-signature-type">Date</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The beginning of the day range (inclusive).</p>
+									</div>
+								</li>
+								<li>
+									<h5>endDate: <span class="tsd-signature-type">Date</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The end of the day range (non inclusive).</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gethiddenweekdays" class="tsd-anchor"></a>
+					<h3>get<wbr>Hidden<wbr>Week<wbr>Days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Hidden<wbr>Week<wbr>Days<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1569">js-year-calendar.ts:1569</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the hidden days of the week.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getlanguage" class="tsd-anchor"></a>
+					<h3>get<wbr>Language</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Language<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1707">js-year-calendar.ts:1707</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the language used for calendar rendering.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getloadingtemplate" class="tsd-anchor"></a>
+					<h3>get<wbr>Loading<wbr>Template</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Loading<wbr>Template<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1791">js-year-calendar.ts:1791</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the loading template.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getmaxdate" class="tsd-anchor"></a>
+					<h3>get<wbr>Max<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Max<wbr>Date<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1344">js-year-calendar.ts:1344</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the maximum date of the calendar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getmindate" class="tsd-anchor"></a>
+					<h3>get<wbr>Min<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Min<wbr>Date<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1319">js-year-calendar.ts:1319</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the minimum date of the calendar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getroundrangelimits" class="tsd-anchor"></a>
+					<h3>get<wbr>Round<wbr>Range<wbr>Limits</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Round<wbr>Range<wbr>Limits<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1592">js-year-calendar.ts:1592</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a value indicating whether the beginning and the end of each range should be displayed as rounded cells.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getstyle" class="tsd-anchor"></a>
+					<h3>get<wbr>Style</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Style<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1369">js-year-calendar.ts:1369</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the current style used for displaying data source.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getweeknumber" class="tsd-anchor"></a>
+					<h3>get<wbr>Week<wbr>Number</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Week<wbr>Number<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1207">js-year-calendar.ts:1207</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the week number for a specified date.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>date: <span class="tsd-signature-type">Date</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The specified date.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getweekstart" class="tsd-anchor"></a>
+					<h3>get<wbr>Week<wbr>Start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Week<wbr>Start<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1768">js-year-calendar.ts:1768</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the starting day of the week.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getyear" class="tsd-anchor"></a>
+					<h3>get<wbr>Year</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Year<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1274">js-year-calendar.ts:1274</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the year displayed on the calendar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="istherefreeslot" class="tsd-anchor"></a>
+					<h3>is<wbr>There<wbr>Free<wbr>Slot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>There<wbr>Free<wbr>Slot<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, after<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1257">js-year-calendar.ts:1257</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if there is no event on the first part, last part or on the whole specified day.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>date: <span class="tsd-signature-type">Date</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The specified day.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> after: <span class="tsd-signature-type">Boolean</span><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Whether to check for a free slot on the first part (if <code>false</code>) or the last part (if <code>true</code>) of the day. If <code>null</code>, this will check on the whole day.</p>
+										<p>Usefull only if using the <code>alwaysHalfDay</code> option of the calendar, or the <code>startHalfDay</code> or <code>endHalfDay</code> option of the datasource.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="render" class="tsd-anchor"></a>
+					<h3>render</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">render<span class="tsd-signature-symbol">(</span>isLoading<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L285">js-year-calendar.ts:285</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Renders the calendar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> isLoading: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setallowoverlap" class="tsd-anchor"></a>
+					<h3>set<wbr>Allow<wbr>Overlap</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Allow<wbr>Overlap<span class="tsd-signature-symbol">(</span>allowOverlap<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1401">js-year-calendar.ts:1401</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a value indicating whether the user can select a range which overlapping an other element present in the datasource.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>allowOverlap: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Indicates whether the user can select a range which overlapping an other element present in the datasource.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setalwayshalfday" class="tsd-anchor"></a>
+					<h3>set<wbr>Always<wbr>Half<wbr>Day</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Always<wbr>Half<wbr>Day<span class="tsd-signature-symbol">(</span>alwaysHalfDay<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1489">js-year-calendar.ts:1489</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a value indicating whether the beginning and the end of each range should be displayed as half selected day.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>alwaysHalfDay: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Indicates whether the beginning and the end of each range should be displayed as half selected day.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setcontextmenuitems" class="tsd-anchor"></a>
+					<h3>set<wbr>Context<wbr>Menu<wbr>Items</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Context<wbr>Menu<wbr>Items<span class="tsd-signature-symbol">(</span>contextMenuItems<span class="tsd-signature-symbol">: </span><a href="../interfaces/calendarcontextmenuitem.html" class="tsd-signature-type">CalendarContextMenuItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1650">js-year-calendar.ts:1650</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets new context menu items.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>contextMenuItems: <a href="../interfaces/calendarcontextmenuitem.html" class="tsd-signature-type">CalendarContextMenuItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new context menu items.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setcustomdatasourcerenderer" class="tsd-anchor"></a>
+					<h3>set<wbr>Custom<wbr>Data<wbr>Source<wbr>Renderer</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Custom<wbr>Data<wbr>Source<wbr>Renderer<span class="tsd-signature-symbol">(</span>customDataSourceRenderer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, currentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, events<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1696">js-year-calendar.ts:1696</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the custom data source renderer. Works only with the style set to &quot;custom&quot;.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>customDataSourceRenderer: <span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, currentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, events<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, currentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, events<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>element: <span class="tsd-signature-type">HTMLElement</span></h5>
+														</li>
+														<li>
+															<h5>currentDate: <span class="tsd-signature-type">Date</span></h5>
+														</li>
+														<li>
+															<h5>events: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setcustomdayrenderer" class="tsd-anchor"></a>
+					<h3>set<wbr>Custom<wbr>Day<wbr>Renderer</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Custom<wbr>Day<wbr>Renderer<span class="tsd-signature-symbol">(</span>customDayRenderer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, currentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1673">js-year-calendar.ts:1673</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the custom day renderer.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>customDayRenderer: <span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, currentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, currentDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>element: <span class="tsd-signature-type">HTMLElement</span></h5>
+														</li>
+														<li>
+															<h5>currentDate: <span class="tsd-signature-type">Date</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setdatasource" class="tsd-anchor"></a>
+					<h3>set<wbr>Data<wbr>Source</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Data<wbr>Source<span class="tsd-signature-symbol">(</span>dataSource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>currentYear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>currentYear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, done<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1744">js-year-calendar.ts:1744</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a new data source.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dataSource: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>currentYear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>currentYear<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, done<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new data source.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setdisableddays" class="tsd-anchor"></a>
+					<h3>set<wbr>Disabled<wbr>Days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Disabled<wbr>Days<span class="tsd-signature-symbol">(</span>disabledDays<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1535">js-year-calendar.ts:1535</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the disabled days.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>disabledDays: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setdisabledweekdays" class="tsd-anchor"></a>
+					<h3>set<wbr>Disabled<wbr>Week<wbr>Days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Disabled<wbr>Week<wbr>Days<span class="tsd-signature-symbol">(</span>disabledWeekDays<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1558">js-year-calendar.ts:1558</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the disabled days of the week.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>disabledWeekDays: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The disabled days of the week to set.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setdisplaydisableddatasource" class="tsd-anchor"></a>
+					<h3>set<wbr>Display<wbr>Disabled<wbr>Data<wbr>Source</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Display<wbr>Disabled<wbr>Data<wbr>Source<span class="tsd-signature-symbol">(</span>displayDisabledDataSource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1466">js-year-calendar.ts:1466</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a value indicating whether the data source must be rendered on disabled days.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>displayDisabledDataSource: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Indicates whether the data source must be rendered on disabled days.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setdisplayheader" class="tsd-anchor"></a>
+					<h3>set<wbr>Display<wbr>Header</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Display<wbr>Header<span class="tsd-signature-symbol">(</span>displayHeader<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1443">js-year-calendar.ts:1443</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a value indicating whether the calendar header is displayed.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>displayHeader: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Indicates whether the calendar header is displayed.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setdisplayweeknumber" class="tsd-anchor"></a>
+					<h3>set<wbr>Display<wbr>Week<wbr>Number</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Display<wbr>Week<wbr>Number<span class="tsd-signature-symbol">(</span>displayWeekNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1420">js-year-calendar.ts:1420</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a value indicating whether the weeks number are displayed.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>displayWeekNumber: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Indicates whether the weeks number are displayed.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setenablecontextmenu" class="tsd-anchor"></a>
+					<h3>set<wbr>Enable<wbr>Context<wbr>Menu</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Enable<wbr>Context<wbr>Menu<span class="tsd-signature-symbol">(</span>enableContextMenu<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1627">js-year-calendar.ts:1627</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a value indicating whether the default context menu must be displayed when right clicking on a day.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>enableContextMenu: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Indicates whether the default context menu must be displayed when right clicking on a day.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setenablerangeselection" class="tsd-anchor"></a>
+					<h3>set<wbr>Enable<wbr>Range<wbr>Selection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Enable<wbr>Range<wbr>Selection<span class="tsd-signature-symbol">(</span>enableRangeSelection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1512">js-year-calendar.ts:1512</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a value indicating whether the user can make range selection.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>enableRangeSelection: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Indicates whether the user can make range selection.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="sethiddenweekdays" class="tsd-anchor"></a>
+					<h3>set<wbr>Hidden<wbr>Week<wbr>Days</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Hidden<wbr>Week<wbr>Days<span class="tsd-signature-symbol">(</span>hiddenWeekDays<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1581">js-year-calendar.ts:1581</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the hidden days of the week.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>hiddenWeekDays: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The hidden days of the week to set.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setlanguage" class="tsd-anchor"></a>
+					<h3>set<wbr>Language</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Language<span class="tsd-signature-symbol">(</span>language<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1719">js-year-calendar.ts:1719</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the language used for calendar rendering.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>language: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The language to use for calendar redering.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setloadingtemplate" class="tsd-anchor"></a>
+					<h3>set<wbr>Loading<wbr>Template</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Loading<wbr>Template<span class="tsd-signature-symbol">(</span>loadingTemplate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1800">js-year-calendar.ts:1800</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the loading template.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>loadingTemplate: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The loading template.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setmaxdate" class="tsd-anchor"></a>
+					<h3>set<wbr>Max<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Max<wbr>Date<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1356">js-year-calendar.ts:1356</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the maximum date of the calendar.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>date: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setmindate" class="tsd-anchor"></a>
+					<h3>set<wbr>Min<wbr>Date</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Min<wbr>Date<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1331">js-year-calendar.ts:1331</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the minimum date of the calendar.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>date: <span class="tsd-signature-type">Date</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setroundrangelimits" class="tsd-anchor"></a>
+					<h3>set<wbr>Round<wbr>Range<wbr>Limits</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Round<wbr>Range<wbr>Limits<span class="tsd-signature-symbol">(</span>roundRangeLimits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1604">js-year-calendar.ts:1604</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets a value indicating whether the beginning and the end of each range should be displayed as rounded cells.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>roundRangeLimits: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Indicates whether the beginning and the end of each range should be displayed as rounded cells.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setstyle" class="tsd-anchor"></a>
+					<h3>set<wbr>Style</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Style<span class="tsd-signature-symbol">(</span>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1381">js-year-calendar.ts:1381</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the style to use for displaying data source.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>style: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The style to use for displaying data source (&quot;background&quot;, &quot;border&quot; or &quot;custom&quot;).</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setweekstart" class="tsd-anchor"></a>
+					<h3>set<wbr>Week<wbr>Start</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Week<wbr>Start<span class="tsd-signature-symbol">(</span>weekStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, preventRendering<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1780">js-year-calendar.ts:1780</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the starting day of the week.</p>
+								</div>
+								<p>This method causes a refresh of the calendar.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>weekStart: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The starting day of the week. This option overrides the parameter define in the language file.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> preventRendering: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setyear" class="tsd-anchor"></a>
+					<h3>set<wbr>Year</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Year<span class="tsd-signature-symbol">(</span>year<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/year-calendar/js-year-calendar/blob/561a8b3/src/ts/js-year-calendar.ts#L1283">js-year-calendar.ts:1283</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the year displayed on the calendar.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>year: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The year to displayed on the calendar.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-has-type-parameter">
+						<a href="calendar.html" class="tsd-kind-icon">Calendar</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="calendar.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-event tsd-parent-kind-class">
+								<a href="calendar.html#clickday" class="tsd-kind-icon">click<wbr>Day</a>
+							</li>
+							<li class=" tsd-kind-event tsd-parent-kind-class">
+								<a href="calendar.html#daycontextmenu" class="tsd-kind-icon">day<wbr>Context<wbr>Menu</a>
+							</li>
+							<li class=" tsd-kind-event tsd-parent-kind-class">
+								<a href="calendar.html#mouseonday" class="tsd-kind-icon">mouse<wbr>OnDay</a>
+							</li>
+							<li class=" tsd-kind-event tsd-parent-kind-class">
+								<a href="calendar.html#mouseoutday" class="tsd-kind-icon">mouse<wbr>Out<wbr>Day</a>
+							</li>
+							<li class=" tsd-kind-event tsd-parent-kind-class">
+								<a href="calendar.html#renderend" class="tsd-kind-icon">render<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-event tsd-parent-kind-class">
+								<a href="calendar.html#selectrange" class="tsd-kind-icon">select<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-event tsd-parent-kind-class">
+								<a href="calendar.html#yearchanged" class="tsd-kind-icon">year<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#addevent" class="tsd-kind-icon">add<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getallowoverlap" class="tsd-kind-icon">get<wbr>Allow<wbr>Overlap</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getalwayshalfday" class="tsd-kind-icon">get<wbr>Always<wbr>Half<wbr>Day</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getcontextmenuitems" class="tsd-kind-icon">get<wbr>Context<wbr>Menu<wbr>Items</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getcustomdatasourcerenderer" class="tsd-kind-icon">get<wbr>Custom<wbr>Data<wbr>Source<wbr>Renderer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getcustomdayrenderer" class="tsd-kind-icon">get<wbr>Custom<wbr>Day<wbr>Renderer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getdatasource" class="tsd-kind-icon">get<wbr>Data<wbr>Source</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getdisableddays" class="tsd-kind-icon">get<wbr>Disabled<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getdisabledweekdays" class="tsd-kind-icon">get<wbr>Disabled<wbr>Week<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getdisplaydisableddatasource" class="tsd-kind-icon">get<wbr>Display<wbr>Disabled<wbr>Data<wbr>Source</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getdisplayheader" class="tsd-kind-icon">get<wbr>Display<wbr>Header</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getdisplayweeknumber" class="tsd-kind-icon">get<wbr>Display<wbr>Week<wbr>Number</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getenablecontextmenu" class="tsd-kind-icon">get<wbr>Enable<wbr>Context<wbr>Menu</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getenablerangeselection" class="tsd-kind-icon">get<wbr>Enable<wbr>Range<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getevents" class="tsd-kind-icon">get<wbr>Events</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#geteventsonrange" class="tsd-kind-icon">get<wbr>Events<wbr>OnRange</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#gethiddenweekdays" class="tsd-kind-icon">get<wbr>Hidden<wbr>Week<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getlanguage" class="tsd-kind-icon">get<wbr>Language</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getloadingtemplate" class="tsd-kind-icon">get<wbr>Loading<wbr>Template</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getmaxdate" class="tsd-kind-icon">get<wbr>Max<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getmindate" class="tsd-kind-icon">get<wbr>Min<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getroundrangelimits" class="tsd-kind-icon">get<wbr>Round<wbr>Range<wbr>Limits</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getstyle" class="tsd-kind-icon">get<wbr>Style</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getweeknumber" class="tsd-kind-icon">get<wbr>Week<wbr>Number</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getweekstart" class="tsd-kind-icon">get<wbr>Week<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#getyear" class="tsd-kind-icon">get<wbr>Year</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#istherefreeslot" class="tsd-kind-icon">is<wbr>There<wbr>Free<wbr>Slot</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#render" class="tsd-kind-icon">render</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setallowoverlap" class="tsd-kind-icon">set<wbr>Allow<wbr>Overlap</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setalwayshalfday" class="tsd-kind-icon">set<wbr>Always<wbr>Half<wbr>Day</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setcontextmenuitems" class="tsd-kind-icon">set<wbr>Context<wbr>Menu<wbr>Items</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setcustomdatasourcerenderer" class="tsd-kind-icon">set<wbr>Custom<wbr>Data<wbr>Source<wbr>Renderer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setcustomdayrenderer" class="tsd-kind-icon">set<wbr>Custom<wbr>Day<wbr>Renderer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setdatasource" class="tsd-kind-icon">set<wbr>Data<wbr>Source</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setdisableddays" class="tsd-kind-icon">set<wbr>Disabled<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setdisabledweekdays" class="tsd-kind-icon">set<wbr>Disabled<wbr>Week<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setdisplaydisableddatasource" class="tsd-kind-icon">set<wbr>Display<wbr>Disabled<wbr>Data<wbr>Source</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setdisplayheader" class="tsd-kind-icon">set<wbr>Display<wbr>Header</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setdisplayweeknumber" class="tsd-kind-icon">set<wbr>Display<wbr>Week<wbr>Number</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setenablecontextmenu" class="tsd-kind-icon">set<wbr>Enable<wbr>Context<wbr>Menu</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setenablerangeselection" class="tsd-kind-icon">set<wbr>Enable<wbr>Range<wbr>Selection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#sethiddenweekdays" class="tsd-kind-icon">set<wbr>Hidden<wbr>Week<wbr>Days</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setlanguage" class="tsd-kind-icon">set<wbr>Language</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setloadingtemplate" class="tsd-kind-icon">set<wbr>Loading<wbr>Template</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setmaxdate" class="tsd-kind-icon">set<wbr>Max<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setmindate" class="tsd-kind-icon">set<wbr>Min<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setroundrangelimits" class="tsd-kind-icon">set<wbr>Round<wbr>Range<wbr>Limits</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setstyle" class="tsd-kind-icon">set<wbr>Style</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setweekstart" class="tsd-kind-icon">set<wbr>Week<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="calendar.html#setyear" class="tsd-kind-icon">set<wbr>Year</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-has-type-parameter tsd-is-external">
+						<a href="../interfaces/calendarcontextmenuitem.html" class="tsd-kind-icon">Calendar<wbr>Context<wbr>Menu<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="../interfaces/calendardatasourceelement.html" class="tsd-kind-icon">Calendar<wbr>Data<wbr>Source<wbr>Element</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter tsd-is-external">
+						<a href="../interfaces/calendardayeventobject.html" class="tsd-kind-icon">Calendar<wbr>Day<wbr>Event<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter tsd-is-external">
+						<a href="../interfaces/calendaroptions.html" class="tsd-kind-icon">Calendar<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="../interfaces/calendarrangeeventobject.html" class="tsd-kind-icon">Calendar<wbr>Range<wbr>Event<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="../interfaces/calendarrenderendeventobject.html" class="tsd-kind-icon">Calendar<wbr>Render<wbr>End<wbr>Event<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="../interfaces/calendaryearchangedeventobject.html" class="tsd-kind-icon">Calendar<wbr>Year<wbr>Changed<wbr>Event<wbr>Object</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

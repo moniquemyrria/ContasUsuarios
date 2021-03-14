@@ -89,8 +89,6 @@ Estrutura da Aplicação Back-End
 
 1. ModelData: Estrutura de modelo do banco de dados
 
-<br>
-
 ```
  public class UsuarioDTO
     {
@@ -104,8 +102,6 @@ Estrutura da Aplicação Back-End
 ```
 
 2. ModelView: Estrutura JSON da Tela View Front-End
-
-<br>
 
 ```
 public class UsuarioViewModel
@@ -125,7 +121,6 @@ public class UsuarioViewModel
 
 3. Controllers: Comunicação Banco de dados e Models com os métodos (GET / PUT / POST / DELETE)
 
-<br>
 
 ```
      [HttpGet("{cep}")]
@@ -143,19 +138,13 @@ Diagrama de Visualização da Arquitetura
 ---
 #### Modelo do diagrama notação C4
 
-<br>
-
 ![](https://raw.githubusercontent.com/moniquemyrria/ContasUsuarios/main/documenta%C3%A7%C3%A3o/Diagram%20-%20Visualiza%C3%A7%C3%A3o%20da%20Arquitetura.png)
 _Figura 01 - Diagrama Visualização da Arquitetura_
-
-<br>
 
 Diagrama Design da Solução
 ---
 ---
 #### Modelo do diagrama notação C4:
-
-<br>
 
 ![](https://raw.githubusercontent.com/moniquemyrria/ContasUsuarios/main/documenta%C3%A7%C3%A3o/Diagram%20-%20Design%20da%20Solu%C3%A7%C3%A3o.png)
 _Figura 02 - Diagrama Visualização da Arquitetura - Modelo C4_
@@ -171,8 +160,6 @@ Layout da Aplicação
 - Botões de Ações
 - Grids para Listagens
 
-<br>
-
 ![](https://raw.githubusercontent.com/moniquemyrria/ContasUsuarios/Desenvolvimento-TemplateBase-13-03-2021/imagensAplicacao/01%20-%20Listagem%20de%20Usuarios%20-A%C3%A7%C3%B5es.png)
 _Figura 03 - Listagem de Usuários_
 
@@ -186,9 +173,6 @@ _Figura 03 - Listagem de Usuários_
 >7. Botão de ação Excluír
 >8. Botão de ação Visualizar dados
 >9. Paginação do grid de dados
-<br>
-
-<br>
 
 ![](https://raw.githubusercontent.com/moniquemyrria/ContasUsuarios/main/imagensAplicacao/02%20-%20Listagem%20de%20Usuarios%20-Pesquisa.PNG)
 _Figura 04 - Listagem de Usuários - Pesquisa de Usuários_
@@ -213,5 +197,4 @@ _Figura 08 - Cadastro de Usuário - Edição de Dados_
 
 ![](https://raw.githubusercontent.com/moniquemyrria/ContasUsuarios/Desenvolvimento-TemplateBase-13-03-2021/imagensAplicacao/08%20-%20Cadastro%20de%20Usuarios%20-%20Visualiza%C3%A7%C3%A3o%20de%20Dados.PNG)
 _Figura 09 - Cadastro de Usuário - Visualização de Dados_
-
 
