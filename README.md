@@ -31,7 +31,6 @@ Iniciando Back-End da Aplicação
 1. Abra o projeto na pasta Projectback
 2. Inicie o projeto 
 
-<br>
 Iniciando Front-End da Aplicação
 ---
 1. Abra o projeto na pasta ContasUsuarios
@@ -51,7 +50,6 @@ Estrutura da Aplicação Fron-End
 ---
 ---
 #### O Padrão de Projeto utilizado é MVC (Model-View-Controller)
-<br>
 
 1. View: Telas de Listagens, Formularios e Models
 ```
