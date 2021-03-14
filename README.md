@@ -28,8 +28,8 @@ ou
 
 Iniciando Back-End da Aplicação
 ---
-- Abra o projeto na pasta Projectback
-- Inicie o projeto 
+1. Abra o projeto na pasta Projectback
+2. Inicie o projeto 
 
 <br>
 Iniciando Front-End da Aplicação
