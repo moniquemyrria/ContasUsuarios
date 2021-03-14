@@ -146,7 +146,7 @@ Diagrama de Visualização da Arquitetura
 <br>
 
 ![](https://raw.githubusercontent.com/moniquemyrria/ContasUsuarios/main/documenta%C3%A7%C3%A3o/Diagram%20-%20Visualiza%C3%A7%C3%A3o%20da%20Arquitetura.png)
-_Figura 01 - Diagrama Visualização da Arquitetura
+_Figura 01 - Diagrama Visualização da Arquitetura_
 
 <br>
 
