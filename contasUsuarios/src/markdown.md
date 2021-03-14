@@ -179,10 +179,19 @@ Layout da Aplicação
 
 <br>
 
-![](https://raw.githubusercontent.com/moniquemyrria/ContasUsuarios/main/imagensAplicacao/01%20-%20Listagem%20de%20Usuarios.PNG)
+![](https://raw.githubusercontent.com/moniquemyrria/ContasUsuarios/Desenvolvimento-TemplateBase-13-03-2021/imagensAplicacao/01%20-%20Listagem%20de%20Usuarios%20-A%C3%A7%C3%B5es.png)
 _Figura 02 - Listagem de Usuários_
 
->
+> Ações:
+>1. Menu Hamburger
+>2. Opção do Menu Usuários
+>3. Informações da desenvolvedora da aplicação
+>4. Botão de ação Novo
+>5. Pesquisa de Usuários
+>6. Botão de ação Editar
+>7. Botão de ação Excluír
+>8. Botão de ação Visualizar dados
+>9. Paginação do grid de dados
 
 
 
