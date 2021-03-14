@@ -144,12 +144,49 @@ public class UsuarioViewModel
             ...
         }
 ```
+Diagrama de Visualização da Arquitetura
+---
+---
+#### Modelo do diagrama notação C4
+
+<br>
+
+![](https://raw.githubusercontent.com/moniquemyrria/ContasUsuarios/main/documenta%C3%A7%C3%A3o/Diagram%20-%20Visualiza%C3%A7%C3%A3o%20da%20Arquitetura.png)
+_Figura 01 - Diagrama Visualização da Arquitetura
+
+<br>
+
+Diagrama Design da Solução
+---
+---
+#### Modelo do diagrama notação C4:
+
+<br>
+
+![](https://raw.githubusercontent.com/moniquemyrria/ContasUsuarios/main/documenta%C3%A7%C3%A3o/Diagram%20-%20Design%20da%20Solu%C3%A7%C3%A3o.png)
+_Figura 01 - Diagrama Visualização da Arquitetura - Modelo C4_
 
 Layout da Aplicação
 ---
 ---
-#### Telas e Menus
+#### Aplicação possui telas auto explicativas com:
+- Menu de Opções ao usuário lado esquerdo
+- Menu Hamburguer (Retirada de visualziação do menu) na barra superior de Informações
+- Barra superior com informações da Aplicação
+- Tela de Listagem e Formulários
+- Botões de Ações
+- Grids para Listagens
+
 <br>
+
+![](https://raw.githubusercontent.com/moniquemyrria/ContasUsuarios/main/imagensAplicacao/01%20-%20Listagem%20de%20Usuarios.PNG)
+_Figura 02 - Listagem de Usuários_
+
+>
+
+
+
+
 
 
 
