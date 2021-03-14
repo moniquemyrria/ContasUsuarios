@@ -35,11 +35,11 @@ namespace projectback.Controllers
         }
 
         [HttpGet("{cep}")]
-        public async Task<CepModelViewDTO> GetFilial(string cep)
+        public async Task<CepModelViewDTO> GetCEP(string cep)
         {
-            return await importarFilial(cep);
+            return await ConsultaCep(cep);
         }
-        private async Task<CepModelViewDTO> importarFilial(string cep)
+        private async Task<CepModelViewDTO> ConsultaCep(string cep)
         {
             HttpClient client;
             Uri usuarioUri;
@@ -57,10 +57,10 @@ namespace projectback.Controllers
 
                 //Pegando os dados do Rest e armazenando na variável usuários
                 var usuariosJson = response.Content.ReadAsStringAsync();
-                CepModelViewDTO importFilial = JsonConvert.DeserializeObject<CepModelViewDTO>(usuariosJson.Result);
+                CepModelViewDTO cepModelViewDTO = JsonConvert.DeserializeObject<CepModelViewDTO>(usuariosJson.Result);
 
                
-                return importFilial;
+                return cepModelViewDTO;
             }
             return null;
         }
