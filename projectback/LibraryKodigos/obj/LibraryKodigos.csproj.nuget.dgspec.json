@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\wamp64\\www\\ContasUsuarios\\projectback\\LibraryKodigos\\LibraryKodigos.csproj": {}
+  },
+  "projects": {
+    "C:\\wamp64\\www\\ContasUsuarios\\projectback\\LibraryKodigos\\LibraryKodigos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\wamp64\\www\\ContasUsuarios\\projectback\\LibraryKodigos\\LibraryKodigos.csproj",
+        "projectName": "LibraryMR",
+        "projectPath": "C:\\wamp64\\www\\ContasUsuarios\\projectback\\LibraryKodigos\\LibraryKodigos.csproj",
+        "packagesPath": "C:\\Users\\Monique Rocha\\.nuget\\packages\\",
+        "outputPath": "C:\\wamp64\\www\\ContasUsuarios\\projectback\\LibraryKodigos\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Monique Rocha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Aspose.Cells": {
+              "target": "Package",
+              "version": "[21.2.0, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.DirectoryServices": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

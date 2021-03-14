@@ -1,0 +1,12 @@
+{
+  "name": "Portal Compras",
+  "short_name": "Portal Compras",
+  "description": "Aplicativo para solicitação e aprovação de compras",
+  "icons": [
+    
+    
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "lang": "pt-BR"
+}

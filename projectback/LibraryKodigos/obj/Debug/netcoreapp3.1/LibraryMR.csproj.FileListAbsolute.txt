@@ -1,0 +1,8 @@
+C:\wamp64\www\ContasUsuarios\projectback\LibraryKodigos\bin\Debug\netcoreapp3.1\LibraryMR.deps.json
+C:\wamp64\www\ContasUsuarios\projectback\LibraryKodigos\bin\Debug\netcoreapp3.1\LibraryMR.dll
+C:\wamp64\www\ContasUsuarios\projectback\LibraryKodigos\bin\Debug\netcoreapp3.1\LibraryMR.pdb
+C:\wamp64\www\ContasUsuarios\projectback\LibraryKodigos\obj\Debug\netcoreapp3.1\LibraryMR.AssemblyInfoInputs.cache
+C:\wamp64\www\ContasUsuarios\projectback\LibraryKodigos\obj\Debug\netcoreapp3.1\LibraryMR.AssemblyInfo.cs
+C:\wamp64\www\ContasUsuarios\projectback\LibraryKodigos\obj\Debug\netcoreapp3.1\LibraryMR.csproj.CoreCompileInputs.cache
+C:\wamp64\www\ContasUsuarios\projectback\LibraryKodigos\obj\Debug\netcoreapp3.1\LibraryMR.dll
+C:\wamp64\www\ContasUsuarios\projectback\LibraryKodigos\obj\Debug\netcoreapp3.1\LibraryMR.pdb
