@@ -213,3 +213,7 @@ _Figura 07 - Inserção de Endereços e consulta de CEP para o Usuário_
 ![](https://raw.githubusercontent.com/moniquemyrria/ContasUsuarios/main/imagensAplicacao/08%20-%20Cadastro%20de%20Usuarios%20-%20Visualiza%C3%A7%C3%A3o%20de%20Dados.PNG)
 _Figura 08 - Cadastro de Usuário - Edição de Dados_
 
+![](https://raw.githubusercontent.com/moniquemyrria/ContasUsuarios/Desenvolvimento-TemplateBase-13-03-2021/imagensAplicacao/08%20-%20Cadastro%20de%20Usuarios%20-%20Visualiza%C3%A7%C3%A3o%20de%20Dados.PNG)
+_Figura 09 - Cadastro de Usuário - Visualização de Dados_
+
+
